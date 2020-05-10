@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 91 90" xmlns="http://www.w3.org/2000/svg">
+<title>PLAYER</title>
+<desc>Created with Sketch.</desc>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(-675 -2308)">
+<g transform="translate(270 2097)">
+<g transform="translate(407 212.5)">
+<ellipse cx="43.5" cy="43.5" rx="43.5" ry="43" stroke="#BF9A56" stroke-width="4"/>
+<polygon transform="translate(49 45.5) rotate(90) translate(-49 -45.5)" points="49 28.5 72 62.5 26 62.5" fill="#BF9A56"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

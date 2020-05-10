@@ -1,0 +1,214 @@
+.b-news{
+    position: relative;
+    margin-bottom: 8.6rem;
+    @include breakpoint(desktop){
+        margin-bottom: 1.1rem;
+        margin-top: 5.1rem;
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        background-color: $light-blue;
+        width: 51.2rem;
+        height: 43rem;
+        left: 6.4rem;
+        right: 6.4rem;
+        top: 7rem;
+        z-index: -1;   
+        @include breakpoint(desktop){
+            width: 100vw;
+            left: 0;
+            right: 0;
+            height: 29.2rem;
+            top: 12.3rem;
+
+        }         
+    }
+    // &__wrapper{
+        
+    // }
+    &__title{
+        position: relative;
+        font-family: $roboto;
+        font-weight: 900;
+        font-size: 5.5rem;
+        color: $dark-blue;
+        // margin-bottom: 4.6rem;
+        margin: 0 0 4.6rem 2.4rem;
+        @include breakpoint(desktop){
+            // margin-bottom: 0;
+            // margin-left: 11.7rem;
+            margin: 0 0 0 11.7rem;
+        }
+        span{
+            color: $gold;
+            font-weight: 900;
+            @include breakpoint(desktop){
+                display: block;
+                margin-left: -7rem;
+                margin-top: -0.4rem;
+            }
+        }
+    }
+    &__slider{
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 3rem;
+        width: 100vw;
+        @include breakpoint(desktop){
+            top: -3.9rem;
+            margin-bottom: 0;
+        }
+        &-wrapper{
+            position: relative;
+            overflow: hidden;
+        }
+        &-slide{
+            position: relative;
+            width: 100%;
+            // left: 0;
+            // @include breakpoint(desktop){
+            //     &:hover{
+            //         transform: scale(1.02);
+            //         z-index: 2;
+            //     }
+            // }
+        }
+        &-article{
+            width: 25.6rem;
+            height: 28.8rem;
+            @include breakpoint(desktop){
+                width: 36rem;
+                height: 40.5rem;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.02);
+                    z-index: 2;
+                }
+            }
+            &__img{
+                position: relative;
+                width: 25.6rem;
+                height: 28.8rem;
+                @include breakpoint(desktop){
+                    width: 36rem;
+                    height: 40.5rem;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &__info{
+                position: absolute;
+                top: 16rem;
+                left: 1.5rem;
+                @include breakpoint(desktop){
+                    top: 28.3rem;
+                    left: 2.2rem;
+                }
+                &-tag{
+                    display: none;
+                    @include breakpoint(desktop){
+                        display: none;
+                        width: 12.8rem;
+                        margin-bottom: 2.6rem;
+                    }
+                }
+                &-date{
+                    position: relative;
+                    font-family: $lato;
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    color: $light-blue;
+                    margin-bottom: 0.7rem;
+                    @include breakpoint(desktop){
+                        font-size: 1.2rem;
+                    }
+                }
+                &-title{
+                    position: relative;
+                    font-family: $lato;
+                    font-weight: 700;
+                    font-size: 2.2rem;
+                    color: $white;
+                    width: 20rem;
+                    margin-bottom: 2.5rem;
+                    @include breakpoint(desktop){
+                        font-size: 1.9rem;
+                        line-height: 2.2rem;
+                    }
+                }
+                &-text{
+                    display: none;
+                    @include breakpoint(desktop){
+                        display: none;
+                        position: relative;
+                        font-family: $lato;
+                        font-weight: 300;
+                        font-size: 1.5rem;
+                        color: $white;
+                        margin-bottom: 2.5rem;
+                        width: 32rem;
+                    }
+                }
+                &-btn{
+                    display: none;
+                    @include breakpoint(desktop){
+                        display: none;
+                        width: 13.1rem;
+                    }
+                }
+            }
+        }
+    }
+    &__btn{
+        @include breakpoint(desktop){
+            position: absolute;
+            top: 24.9rem;
+            left: 1.6rem;
+        }
+    }
+    &__btn .c-btn--navy-blue{
+        padding: 0.8rem 0.33rem;
+        margin: auto;
+        @include breakpoint(desktop){
+            width: 14.6rem;
+            padding: 0.8rem 2.33rem;
+        }
+    }
+    &__arrow{
+        display: none !important;
+        @include breakpoint(desktop){
+            display: block !important;
+            position: absolute;
+            top: 43%;
+            &--left{
+                left: 18rem;
+            }
+            &--right{
+                right: 0;
+            }
+        }
+    }
+}
+
+// .b-news__btn .c-btn--navy-blue{
+//     padding: 0.8rem 0.33rem;
+// }
+
+.b-news__slider-wrapper .slick-list{
+    padding: 0 20% 0 0 !important;
+    @include breakpoint(desktop){
+        // padding: 0 12.5% 0 18rem !important;
+        padding-right: 12.5% !important;
+        margin-left: 18rem !important;
+    }
+}
+
+.b-news__slider-wrapper .slick-slide{
+    width: 25.6rem !important;
+    @include breakpoint(desktop){
+        width: 36rem !important;
+    }
+}

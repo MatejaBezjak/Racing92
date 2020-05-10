@@ -1,0 +1,199 @@
+.b-slider-calendar{
+    position: relative;
+    width: 100%;
+    // display: flex;
+    overflow: hidden;
+    @include breakpoint(desktop){
+        padding: 0 8.5rem !important;
+    }
+    &__wrapper{
+        margin-top: -4.5rem !important;
+        margin-bottom: 7rem !important;
+        @include breakpoint(desktop){
+        margin-top: -5.9rem !important;
+        z-index: 3;
+        }
+    }
+    &__slide{
+        position: relative;
+        width: 51.2rem !important;
+        height: 38rem;
+        text-align: center;
+        margin: 0 0.4rem !important;
+        @include breakpoint(desktop){
+            width: 41.5rem !important;
+            margin: 0 0.7rem !important;
+            height: 26.4rem;
+        }
+        &-time{
+            position: relative;
+            background-color: $white;
+            width: 100%;
+            height: 25%;
+            padding-top: 1.1rem;
+            @include breakpoint(desktop){
+                padding-top: 0.9rem;
+            }
+            p{
+                font-family: $lato;
+                font-weight: 700;
+                font-size: 2rem;
+                color: $dark-blue;
+                padding-left: 1.8rem;
+                padding-bottom: 0.8rem;
+                @include breakpoint(desktop){
+                    font-size: 1.2rem;
+                    // padding-left: 0.6rem;
+                    padding-left: 0;
+                    padding-bottom: 0.5rem;
+                }
+            }
+            h3{
+                font-family: $roboto;
+                font-weight: 500;
+                font-size: 2.5rem;
+                color: $gold;
+                padding-bottom: 0.2rem;
+                @include breakpoint(desktop){
+                    font-size: 1.5rem;
+                    padding-bottom: 0.5rem;
+                }
+            }
+            h4{
+                font-family: $roboto;
+                font-weight: 500;
+                font-size: 2.5rem;
+                color: $dark-blue;
+                @include breakpoint(desktop){
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        &-score{
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            height: 25%;
+            background-color: $light-blue;
+            padding: 0 3.6rem;
+            align-items: center;
+            &-img{
+                // width: 4.7rem;
+                // height: 6.4rem;
+                width: 8.5rem;
+                @include breakpoint(desktop){
+                    width: 7rem;
+                }
+                &--shield{
+                    width: 4.9rem;
+                    @include breakpoint(desktop){
+                        width: 3.9rem;
+                    }
+                }
+                &--circle{
+                    width: 6.5rem;
+                    @include breakpoint(desktop){
+                        width: 5.2rem;
+                    }
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &-score{
+                display: flex;
+                margin-top: 0.4rem;
+                span{
+                    font-family: $roboto;
+                    font-weight: 900;
+                    font-size: 3.5rem;
+                    color: $dark-blue;
+                    @include breakpoint(desktop){
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+        &-teams{
+            position: relative;
+            background-color: $white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 25%;
+            padding: 0 1.6rem;
+            @include breakpoint(desktop){
+                padding: 0 1.5rem;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                width: 0.1rem;
+                height: 3.2rem;
+                background: $dark-blue;
+                left: 50%;
+                top: 3.2rem;
+                @include breakpoint(desktop){
+                    height: 2.5rem;
+                    top: 2.1rem;
+                }
+            }
+            p{
+                font-family: $lato;
+                font-weight: 900;
+                font-size: 2.8rem;
+                color: $dark-blue;
+                width: 36%;
+                @include breakpoint(desktop){
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        &-btn{
+            position: relative;
+            background-color: $light-blue;
+            height: 25%;
+            &-triger{
+                // top: 42%;
+                margin: auto;
+                top: 24%;
+                @include breakpoint(desktop){
+                    width: 14.5rem;
+                    top: 20%;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    &__arrow{
+        display: none !important;
+        @include breakpoint(desktop){
+            display: block !important;
+            position: absolute;
+            top: 40%;
+            &--left{
+                left: 4rem;
+            }
+            &--right{
+                right: 4rem;
+            }
+        }
+    }
+}
+
+.b-slider-calendar .slick-slide{
+    @include breakpoint(desktop){
+    width: 42.2rem !important;
+
+    }
+}
+// .slick-track{
+//     width: 206.4rem !important;
+// }
+.b-slider-calendar .slick-list{
+    padding: 0 6.1rem !important;
+    @include breakpoint(desktop){
+        padding: 0 !important;
+    }
+}

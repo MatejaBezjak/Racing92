@@ -1,0 +1,75 @@
+.c-btn{
+    position: relative;
+    display: block;
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: $white;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    @include breakpoint(desktop){
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+    &--light-blue{
+        font-family: $lato;
+        font-weight: 700;
+        color: $dark-blue;
+        background-color: $light-blue;
+        border: 1px solid $light-blue;
+        width: 15.3rem;
+        padding: 1.1rem 0;
+        @include breakpoint(desktop){
+            width: 12.2rem;
+            padding: 0.9rem 0;
+        }
+
+    }
+    &--navy-blue{
+        background-color: $navy-blue;
+        border: 1px solid $navy-blue;
+        width: 16rem;
+        padding: 1.7rem 0.33rem;
+        @include breakpoint(desktop){
+            width: 12.5rem;
+            padding: 1.4rem 0;
+            font-size: 1.2rem;
+            &:hover{
+                background-color: $white;
+                color: $navy-blue;
+            }
+        }
+    }
+    &--dark-blue{
+        background-color: $dark-blue;
+        border: 1px solid $dark-blue;
+        width: 16rem;
+        padding: 1.7rem 0.33rem;
+        @include breakpoint(desktop){
+            width: 12.5rem;
+            padding: 1.4rem 0;
+            font-size: 1.2rem;
+            &:hover{
+                background-color: $white;
+                color: $dark-blue;
+            }
+        }
+    }
+    &--gold{
+        background-color: $gold;
+        border: 1px solid $gold;
+        width: 16rem;
+        padding: 1.7rem 0.33rem;
+        @include breakpoint(desktop){
+            width: 12.5rem;
+            padding: 1.4rem 0;
+            font-size: 1.2rem;
+            &:hover{
+                background-color: $white;
+                color: $gold;
+            }
+        }
+    }
+}
+

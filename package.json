@@ -1,0 +1,37 @@
+{
+  "scripts": {
+    "build": "webpack --config=build.config.js",
+    "dev": "webpack-dev-server --hot --progress --colors --config=dev.config.js"
+  },
+  "name": "Racing92",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-hot-loader": "^1.4.4",
+    "css-loader": "^3.5.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.2.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "jquery": "^3.5.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "slick-carousel": "^1.8.1",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.43.0",
+    "webpack-build-notifier": "^2.0.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

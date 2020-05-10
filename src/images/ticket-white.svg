@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 36 46" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 7</title>
+<desc>Created with Sketch.</desc>
+<defs>
+<polygon id="b" points="0 0.0079192 21.947 0.0079192 21.947 7.974 0 7.974"/>
+<polygon id="a" points="0 0.053184 21.947 0.053184 21.947 28 0 28"/>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(-963 -603)">
+<g transform="translate(0 88)">
+<g transform="translate(947 503)">
+<g transform="translate(34 35) rotate(20) translate(-11 -20)">
+<mask id="d" fill="white">
+<use xlink:href="#b"/>
+</mask>
+<path d="m21.947 7.974v-7.9661h-5.6101c0 2.5452-2.4012 4.6086-5.3632 4.6086-2.9621 0-5.3633-2.0634-5.3633-4.6086h-5.6101v7.9661h21.947z" fill="#fff" mask="url(#d)"/>
+<g transform="translate(0 12)">
+<mask id="c" fill="white">
+<use xlink:href="#a"/>
+</mask>
+<path d="m-1.7391e-5 0.053184v27.947h5.615c-0.0023478-0.056494-0.0049565-0.11299-0.0049565-0.16998 0-2.594 2.4012-4.6968 5.3632-4.6968 2.9621 0 5.3633 2.1028 5.3633 4.6968 0 0.056988-0.0026087 0.11348-0.0049565 0.16998h5.615v-27.947h-21.947z" fill="#fff" mask="url(#c)"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

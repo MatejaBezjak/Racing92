@@ -1,0 +1,29 @@
+.b-poster-slider{
+    display: none;
+    @include breakpoint(desktop){
+        display: block;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding: 0 9rem;
+        // margin-bottom: 5.1rem;
+        // &__wrapper{
+
+        // }
+        &__slide{
+            position: relative;
+            width: 126rem;
+            height: 32.5rem;
+            margin: auto;
+            &-img{
+                position: relative;
+                width: 126rem;
+                height: auto;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
