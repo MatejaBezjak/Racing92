@@ -54,7 +54,7 @@
             justify-content: space-between;
             width: 100%;
             // padding: 0 9rem;
-            padding: 0 9rem 2.8rem 9rem;
+            padding: 0 9rem 0 9rem;
             margin-bottom: 0;
         }
         &::after{
@@ -128,7 +128,7 @@
         position: relative;
         @include breakpoint(desktop){
             margin: 0 9rem;
-            background: $white;
+            // background: $light-blue;
         }
         &-wrapper{
             position: relative;
@@ -136,8 +136,19 @@
         &-slide{
             position: relative;
             width: 25.6rem !important;
+            background: $white;
             @include breakpoint(desktop){
-            width: 25.28rem !important;
+                width: 25.28rem !important;
+                box-shadow: 0 1.2rem 2.4rem 0 transparent;
+                cursor: pointer;
+                transition: all .3s ease;
+                &:hover{
+                    transform: scale(1.12);
+                    background: $white;
+                    width: 28.3rem;
+                    box-shadow: 0 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.5);
+                    z-index: 3;
+                }
             }
             &__img{
                 position: relative;
@@ -208,5 +219,24 @@
             }
         }
         
+    }
+}
+
+.b-shop__slider .slick-list{
+    @include breakpoint(desktop){
+        height: 35.6rem;
+    }
+}
+
+.b-shop__slider .slick-track{
+    @include breakpoint(desktop){
+        top: 3rem;
+    }
+}
+
+.b-shop__slider-slide:hover .b-shop__slider-slide__text{
+    @include breakpoint(desktop){
+        color: $navy-blue;
+        background: none;
     }
 }

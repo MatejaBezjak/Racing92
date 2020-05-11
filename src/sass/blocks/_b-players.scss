@@ -52,6 +52,9 @@
             width: 44rem !important;
             @include breakpoint(desktop){
                 width: 33rem !important;
+                &:hover{
+                    transition: all .3s ease;
+                }
             }
             &::after{
                 position: absolute;
@@ -78,6 +81,7 @@
                 margin: auto;
                 @include breakpoint(desktop){
                     width: 33rem;
+                    
                 }
                 &-img{
                     position: relative;
@@ -157,3 +161,15 @@
 // .b-players__slider-wrapper .slick-list{
 //     padding: 0 9rem !important;
 // }
+
+.b-players__slider-slide:hover .b-players__slider-slide__player{
+    @include breakpoint(desktop){
+        display: none;
+    }
+} 
+
+.b-players__slider-slide:hover .b-players__slider-slide__player-overlay{
+    @include breakpoint(desktop){
+        display: block;
+    }
+}
