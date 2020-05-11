@@ -33,3 +33,26 @@ $(document).ready(function(){
         ]
     });
 });
+
+$(document).ready(function(){
+    $('.b-news__arrow').hide();
+    $('.b-news__slider').on('mouseover', function(){
+        $('.b-news__arrow').show();
+    });
+    $('.b-news__slider').on('mouseout', function(){
+        $('.b-news__arrow').hide();
+    });
+
+    $('.b-news__arrow--right').on('click', function(){
+        var currentSlides = $('.b-news__slider-wrapper .slick-list').width();
+        var current = 0;
+        console.log('clicked');
+        if(current >= 0){
+            $('.b-news__slider-wrapper .slick-list').animate({
+                scrollLeft: currentSlides + 100
+            });
+        }
+    });
+    
+    
+});
