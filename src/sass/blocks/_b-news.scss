@@ -2,7 +2,8 @@
     position: relative;
     margin-bottom: 8.6rem;
     @include breakpoint(desktop){
-        margin-bottom: 1.1rem;
+        // margin-bottom: 1.1rem;
+        margin-bottom: 0;
         margin-top: 5.1rem;
     }
     &::after{

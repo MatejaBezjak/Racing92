@@ -2,7 +2,8 @@
     position: relative;
     margin-bottom: 6rem;
     @include breakpoint(desktop){
-        margin-bottom: 6.1rem;
+        margin-bottom: 7rem;
+        // margin-top: -0.7rem;
         &::after{
             position: absolute;
             content: '';
@@ -11,15 +12,15 @@
             height: 72.7rem;
             left: 0;
             right: 0;
-            top: 15.7rem;
+            top: 15rem;
             z-index: -1;
         }
     }
     &__wrapper{
         position: relative;
         @include breakpoint(desktop){
-            padding-top: 2rem;
-            padding-bottom: 4rem;
+            padding-top: 1.3rem;
+            // padding-bottom: 4rem;
         }
     }
     &__title{
@@ -79,7 +80,7 @@
             @include breakpoint(desktop){
                 width: 78rem;
                 height: 43.2rem;
-                margin: -4rem 0 0 0;
+                margin: -4.2rem 0 0 0;
             }
             img{
                 width: 100%;
@@ -210,7 +211,7 @@
         display: none;
         @include breakpoint(desktop){
                 display: block !important;
-                top: 41.4%;
+                top: 43%;
             &--left{
                 left: 4rem;
             }

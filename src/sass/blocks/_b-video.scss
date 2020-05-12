@@ -2,7 +2,7 @@
     position: relative;
     margin-bottom: 8.6rem;
     @include breakpoint(desktop){
-        // margin-top: -1.7rem;
+        margin-top: -1.6rem;
         margin-bottom: 0;
     }
     &__wrapper{
@@ -23,7 +23,7 @@
     &__top{
         position: relative;
         @include breakpoint(desktop){
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
             &::after{
                 position: absolute;
                 content: '';
@@ -264,7 +264,7 @@
         &__btn{
             @include breakpoint(desktop){
                 position: absolute;
-                top: -9.5rem;
+                top: -8.5rem;
                 right: 1.7rem;
             }
         }
@@ -281,7 +281,7 @@
             display: none;
             @include breakpoint(desktop){
                 display: block !important;
-                top: 40.7%;
+                top: 41.6%;
                 &--left{
                     left: 0;
                 }
@@ -294,17 +294,25 @@
 }
 
 .b-video__slider-thumbs .slick-list{
-    height: 29rem;
+    @include breakpoint(desktop){
+        height: 29rem;
+    }
 }
 
 .b-video__slider-thumbs .slick-track{
-    top: 1rem;
+    @include breakpoint(desktop){
+        top: 1rem;
+    }
 }
 
 .b-video__slider-thumbs__slide-video:hover .b-video__slider-thumbs__slide-text{
-    left: 5rem;
+    @include breakpoint(desktop){
+        left: 5rem;
+    }
 }
 
 .b-video__slider-thumbs__slide-video:hover .b-video__slider-thumbs__slide-icon{
-    left: 5rem;
+    @include breakpoint(desktop){
+        left: 5rem;
+    }
 }

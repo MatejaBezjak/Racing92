@@ -16,7 +16,7 @@
         }
     }
     @include breakpoint(desktop){
-        margin-bottom: 4.7rem;
+        margin-bottom: 4.9rem;
     }
     &__wrapper{
         position: relative;
@@ -26,7 +26,7 @@
         display: flex;
         width: 100%;
         padding: 0 4rem 0 6.2rem;
-        margin-bottom: 3.6rem;
+        margin-bottom: 3.8rem;
         @include breakpoint(desktop){
             padding: 0 4rem 0 29.6rem;
             margin-bottom: 4.4rem;
@@ -40,7 +40,7 @@
             color: $dark-blue;
             margin-right: 2rem;
             @include breakpoint(desktop){
-                margin-right: 1.8rem;
+                margin-right: 1.74rem;
             }
             span{
                 color: $gold;
@@ -56,7 +56,6 @@
         &-text{
             position: relative;
             font-family: $lato;
-            font-weight: 400;
             font-size: 2rem;
             color:$navy-blue;
             width: 45%;
@@ -65,13 +64,27 @@
             @include breakpoint(desktop){
                 font-size: 1.5rem;
                 margin-top: 6.2rem;
+                line-height: 1.8rem;
+                display: flex;
+                margin-top: 6.5rem;
+                letter-spacing: 0.003em;
             }
             span{
-                font-family: $lato;
-                font-weight: 900;
-                font-size: 2.5rem;
+                font-weight: 400;
+                display: block;
+                width: 24rem;
                 @include breakpoint(desktop){
-                    font-size: 2rem;
+                    width: 18rem;
+                }
+                &:nth-of-type(2){
+                    font-family: $lato;
+                    font-weight: 900;
+                    font-size: 2.5rem;
+                    @include breakpoint(desktop){
+                        font-size: 2rem;
+                        margin-left: -0.2rem;
+                        margin-top: 1.7rem;
+                    }
                 }
             }
         }
@@ -101,7 +114,7 @@
         @include breakpoint(desktop){
             width: 55.2%;
             // padding: 0 9.5rem;
-            padding: 0.4rem 8.3rem 0 8.3rem;
+            padding: 0.5rem 8.3rem 0 8.3rem;
             background: $white;
         }
         &-fields{
@@ -123,7 +136,7 @@
                 // margin: 0 0 1.2rem 14.62rem;
                 // margin: auto;
                 // margin-bottom: 1.2rem;
-                margin: 0 0 1.2rem 1.3rem;
+                margin: 0 0 1.1rem 1.3rem;
 
             }
             
@@ -187,7 +200,7 @@
             @include breakpoint(desktop){
                 font-size: 1.4rem;
                 // margin: 0 0 4.8rem 16.4rem;
-                margin: 0 0 2.7rem 1.2rem;
+                margin: 0 0 2.8rem 1.2rem;
             }
         }
         &-select{
@@ -200,7 +213,7 @@
             margin: 0 0 4.8rem 6.4rem;
             @include breakpoint(desktop){
                 // font-size: 1.2rem;
-                margin: 0 0 5.8rem 1.4rem;
+                margin: 0 0 5.7rem 1.4rem;
             }
             &__checkbox{
                 position: relative;
@@ -268,7 +281,7 @@
                 margin-bottom: 4.7rem;
                 @include breakpoint(desktop){
                     width: 14.6rem;
-                    margin-bottom: 1.6rem;
+                    margin-bottom: 1.3rem;
                 }
             }
             &__privacy-msg{
