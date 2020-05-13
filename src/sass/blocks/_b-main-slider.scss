@@ -3,7 +3,6 @@
     padding-top: 17.9rem;
     @include breakpoint(desktop){
         padding-top: 8.7rem;
-        // width: 100%;
         height: 73.7rem;
         overflow: hidden;
     }
@@ -13,15 +12,19 @@
         flex-wrap: wrap;
         @include breakpoint(desktop){
             flex-wrap: nowrap;
-            // width: 100%;
         }
     }
     &__slide{
         position: relative;
         @include breakpoint(desktop){
+            display: block;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             width: 18.8%;
             box-shadow: 0 0 2rem 1rem $dark-blue;
             height: 65rem;
+            transition: all .5s ease;
             cursor: pointer;
             &:nth-of-type(2){
                 z-index: 2;
@@ -29,29 +32,19 @@
         }
         &--main{
             position: relative;
-            width: 100%;
-            // @include breakpoint(desktop){
-            //     width: 62.4%;
-            //     flex: 1 0 62.4%;
-            //     z-index: 3;
-            // }
         }
         &-img{
             position: relative;
             width: 32rem;
             height: 30rem;
             @include breakpoint(desktop){
-                width: 90rem;
-                // width: 100%;
-                height: 65rem;
+                display: none;
             }
             &--main{
                 width: 64rem;
                 height: 46.2rem;
                 @include breakpoint(desktop){
-                    // width: 90rem;
-                    width: 100%;
-                    height: 65rem;
+                    display: none;
                 }
             }
             img{
@@ -63,23 +56,28 @@
             position: absolute;
             top: 15.6rem;
             margin: 0 3.2rem;
+            z-index: 1;
             @include breakpoint(desktop){
                 top: 42.3rem;
                 margin: 0 2.3rem;
+                transition: all .5s ease;
+                z-index: 0;
             }
             &--main{
                 top: 17.4rem;
                 margin: 0 6.4rem;
                 @include breakpoint(desktop){
-                    // top: 30.7rem;
-                    // margin: 0 9.2rem;
+                    top: 42.3rem;
+                    margin: 0 2.3rem;
                 }
             }
             &__tag{
                 display: none;
+                margin-bottom: 2.3rem;
                 &--main{
                     display: block;
-                    margin-bottom: 2.3rem;
+                    transition: all .5s ease;
+
                 }
             }
             &__title{
@@ -93,6 +91,8 @@
                 @include breakpoint(desktop){
                     font-size: 2rem;
                     line-height: 2.8rem;
+                    transition: all .5s ease;
+
                 }
                 &--main{
                     font-size: 3.5rem;
@@ -115,16 +115,17 @@
             }
             &__text{
                 display: none;
+                font-family: $lato;
+                font-weight: 400;
+                font-size: 1.5rem;
+                color: $white;
+                padding-right: 12rem;
+                line-height: 2.1rem;
+                padding-bottom: 2rem;
                 &--main{
                     @include breakpoint(desktop){
                         display: block;
-                        font-family: $lato;
-                        font-weight: 400;
-                        font-size: 1.5rem;
-                        color: $white;
-                        padding-right: 12rem;
-                        line-height: 2.1rem;
-                        padding-bottom: 2rem;
+                        transition: all .5s ease;
                     }
                 }
             }
@@ -136,36 +137,39 @@
             }
         }
     }
-    // &__slide .active{
-    //     @include breakpoint(desktop){
-    //         display: inline-block;
-    //         width: 62.4%;
-    //         flex: 1 0 62.4%;
-    //         z-index: 3;
-    //     }
-    // }
-
 }
 
 .active{
     @include breakpoint(desktop){
-        display: inline-block;
-        // width: 62.4%;
-        // flex: 1 0 62.4%;
-        // z-index: 3;
-    }
-}
-
-.b-main-slider__slide .active{
-    @include breakpoint(desktop){
         width: 62.4%;
-        flex: 1 0 62.4%;
+        transition: all .5s ease;
         z-index: 3;
-    }
-}
-.b-main-slider__slide.active .b-main-slider__slide-description{
-    @include breakpoint(desktop){
-        top: 30.7rem;
-        margin: 0 9.2rem;
+        .b-main-slider__slide-description{
+            @include breakpoint(desktop){
+                top: 30.7rem;
+                margin: 0 9.2rem;
+                width: 77%;
+                transition: all .5s ease;
+                z-index: 1;
+            }
+        }
+        .b-main-slider__slide-description__tag{
+            @include breakpoint(desktop){
+                display: block;
+                transition: all .5s ease;
+            }
+        }
+        .b-main-slider__slide-description__text{
+            @include breakpoint(desktop){
+                display: block;
+                transition: all .5s ease;
+            }
+        }
+        .b-main-slider__slide-description__btn{
+            @include breakpoint(desktop){
+                display: block;
+                transition: all .5s ease;
+            }
+        }
     }
 }

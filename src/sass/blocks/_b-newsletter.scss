@@ -254,11 +254,28 @@
                     height: 3rem;
                     top: 0;
                     left: 0;
-                    border: 0.2rem solid $dark-blue;
+                    border: 0.1rem solid $dark-blue;
                     border-radius: 50%;
                     @include breakpoint(desktop){
+                        border: 0.2rem solid $dark-blue;
                         width: 1.66rem;
                         height: 1.66rem;
+                    }
+                    &:after{
+                        position: absolute;
+                        content: "";
+                        top: 0.5rem;
+                        left: 0.5rem;
+                        width: 1.8rem;
+                        height: 1.8rem;
+                        border-radius: 50%;
+                        background: $dark-blue;
+                        @include breakpoint(desktop){
+                            width: 0.9rem;
+                            height: 0.9rem;
+                            top: 0.18rem;
+                            left: 0.18rem;
+                        }
                     }
 
                 }
