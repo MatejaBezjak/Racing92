@@ -1,0 +1,48 @@
+.c-page-navigator{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 51.2rem;
+    height: 11.5rem;
+    box-shadow: 0 2rem 4.5rem -1.2rem rgba(0,0,0,0.5);
+    background: $light-blue;
+    text-transform: capitalize;
+    @include breakpoint(desktop){
+        width: 126rem;
+    }
+    &__container{
+        position: relative;
+        display: flex;
+        align-items: center;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+        &-item{
+            position: relative;
+            font-family: $lato;
+            font-weight: 400;
+            font-size: 2.2rem;
+            padding: 0 3.9rem;
+            @include breakpoint(desktop){
+                font-size: 1.5rem;
+                white-space: nowrap;
+                padding: 0 4rem;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                display: block;
+                width: 1px;
+                height: 1.5rem;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                background: $dark-blue;
+            }
+            a{
+                color: $dark-blue;
+                font-weight: 400;
+            }
+        }
+    }
+}

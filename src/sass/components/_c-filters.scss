@@ -1,0 +1,145 @@
+.c-filters{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 51.2rem;
+    height: 16.6rem;
+    box-shadow: 0 2rem 4.5rem -1.2rem rgba(0,0,0,0.5);
+    background: $light-blue;
+    text-transform: capitalize;
+    @include breakpoint(desktop){
+        width: 126rem;
+        height: 11.6rem;
+    }
+    &__container{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__wrapper{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+        padding: 3.5rem 2.1rem 2.6rem;
+        @include breakpoint(desktop){
+            flex-direction: row;
+            padding: 4.5rem 9.9rem 3.5rem;
+            justify-content: space-between;
+        }
+    }
+    &__filter{
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 2.6rem;
+        @include breakpoint(desktop){
+            width: 55.8%;
+            padding-bottom: 0;
+        }
+        &-item{
+            position: relative;
+            display: flex;
+            &__trigger{
+                position: relative;
+                display: flex;
+                width: 15rem;
+                height: 4.5rem;
+                padding: 0 0.8rem 0 1rem;
+                background: $white;
+                align-items: center;
+                justify-content: space-between;
+                font-family: $roboto;
+                // font-weight: 500;
+                font-size: 2.2rem;
+                color: $navy-blue;
+                @include breakpoint(desktop){
+                    width: 13.6rem;
+                    height: 3.5rem;
+                    font-size: 1.6rem;
+                }
+                span{
+                    font-weight: 500;
+                }
+                &-arrow{
+                    position: relative;
+                    width: 1.6rem;
+                    height: 1rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &__search{
+        position: relative;
+        &-wrapper{
+            position: relative;
+            display: flex;
+        }
+        &-field{
+            position: relative;
+            width: 30rem;
+            margin: 0 auto;
+            @include breakpoint(desktop){
+                width: 24.7rem;
+            }
+            input{
+                width: 100%;
+                height: 3.4rem;
+                color: $navy-blue;
+                border: 0;
+                border-bottom: 1px solid $navy-blue;
+                background: transparent;
+                border-radius: 0;
+                outline: 0;
+                padding: 0 4rem 0 0.9rem;
+                @include breakpoint(desktop){
+                    height: 3rem;
+                    padding: 0 3rem 0.5rem 0.5rem;
+                }
+                &::placeholder{
+                    opacity: 1;
+                    color: $navy-blue;
+                    font-family: $roboto;
+                    font-weight: 500;
+                    font-size: 2.2rem;
+                    @include breakpoint(desktop){
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+        &-submit{
+            position: absolute;
+            top: 0.6rem;
+            right: 0.6rem;
+            @include breakpoint(desktop){
+                top: 0.4rem;
+                right: 1.1rem;
+            }
+            &__icon{
+                display: block;
+                position: relative;
+                width: 2.2rem;
+                height: 2.3rem;
+                @include breakpoint(desktop){
+                    width: 1.7rem;
+                    height: 1.7rem;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

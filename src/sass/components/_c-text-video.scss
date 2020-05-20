@@ -1,0 +1,36 @@
+.c-text-video{
+    position: absolute;
+    top: 4.5rem;
+    left: 6.4rem;
+    width: 29rem;
+    @include breakpoint(desktop){
+        top: 5.4rem;
+        left: 9rem;
+        width: 22rem;
+        transition: all .3s ease;
+    }
+    &__date{
+        position: relative;
+        display: block;
+        font-family: $lato;
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: $light-blue;
+        margin-bottom: 0.7rem;
+        @include breakpoint(desktop){
+            font-size: 1.2rem;
+            margin-bottom: 2.1rem;
+        }
+    }
+    &__title{
+        position: relative;
+        font-family: $roboto;
+        font-weight: 700;
+        font-size: 2.2rem;
+        color: $white;
+        text-transform: uppercase;
+        @include breakpoint(desktop){
+            letter-spacing: 0.01em;
+        }
+    }
+}

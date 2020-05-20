@@ -9,7 +9,9 @@ module.exports = {
     entry: {
         main: "./src/index.js",
         sliderPages: "./src/js/slider-pages.js",
-        homePage: "./src/js/home-page.js"
+        homePage: "./src/js/home-page.js",
+        submenu: "./src/js/submenu.js"
+
 
 
     },
@@ -65,16 +67,26 @@ module.exports = {
             filename: "index.html",
             template: path.resolve(__dirname, "src/index.html")
         }),
-        // new HtmlWebpackPlugin({
-        //     filename: "mixologie_page.html",
-        //     template: path.resolve(__dirname, "src/mixologie_page.html"),
-        //     excludeChunks: ["homePage"]
-        // }),
-        // new HtmlWebpackPlugin({
-        //     filename: "detail_page.html",
-        //     template: path.resolve(__dirname, "src/detail_page.html"),
-        //     excludeChunks: ["homePage"]
-        // }),
+        new HtmlWebpackPlugin({
+            filename: "actu_page.html",
+            template: path.resolve(__dirname, "src/actu_page.html"),
+            excludeChunks: ["homePage"]
+        }),
+        new HtmlWebpackPlugin({
+            filename: "tv_page.html",
+            template: path.resolve(__dirname, "src/tv_page.html"),
+            excludeChunks: ["homePage"]
+        }),
+        new HtmlWebpackPlugin({
+            filename: "cgv_page.html",
+            template: path.resolve(__dirname, "src/cgv_page.html"),
+            excludeChunks: ["homePage", "sliderPages"]
+        }),
+        new HtmlWebpackPlugin({
+            filename: "article_page.html",
+            template: path.resolve(__dirname, "src/article_page.html"),
+            excludeChunks: ["homePage"]
+        }),
         new CopyWebpackPlugin([{
             from: 'src/images',
             to: 'images'

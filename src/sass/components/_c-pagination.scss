@@ -1,0 +1,88 @@
+.c-pagination{
+    position: relative;
+    display: flex;
+    // width: 40%;
+    margin: auto;
+    justify-content: space-between;
+    width: 60%;
+    height: 12.6rem;
+    align-items: center;
+    @include breakpoint(desktop){
+        width: 24.5%;
+        height: 3.3rem;
+    }
+    &__arrows{
+        position: relative;
+        color: $navy-blue;
+        font-family: $roboto;
+        font-weight: 500;
+        font-size: 3rem;
+        @include breakpoint(desktop){
+            font-size: 1.6rem;
+        }
+        &-prev{
+            // display: none;
+            position: relative;
+            margin-right: 1rem;
+            @include breakpoint(desktop){
+                display: none;
+                &--begining{
+                    display: inline-block;
+                }
+            }
+        }
+        &-next{
+            position: relative;
+            margin-left: 1rem;
+            @include breakpoint(desktop){
+                display: none;
+                &--end{
+                    display: inline-block;
+                }
+            }
+             
+        }
+    }
+    
+    &__pages{
+        position: relative;
+        margin: auto;
+        width: 55%;
+        @include breakpoint(desktop){
+            width: 70%;
+        }
+        ul{
+            position: relative;
+            // width: 55%;
+            display: flex;
+            justify-content: space-between;
+            li{
+                position: relative;
+                display: inline-block;
+                &:last-of-type{
+                    display: none;
+                    @include breakpoint(desktop){
+                        display: inline-block;
+                    }
+                }
+                a{
+                    display: block;
+                    text-align: center;
+                    width: 3.4rem;
+                    height: 3.4rem;
+                    color: $navy-blue;
+                    font-family: $roboto;
+                    font-weight: 500;
+                    font-size: 3.4rem;
+                    color: $navy-blue;
+                    @include breakpoint(desktop){
+                        font-size: 1.6rem;
+                        width: 1.6rem;
+                        height: 1.6rem;
+                    }
+
+                }
+            }
+        }
+    }
+}

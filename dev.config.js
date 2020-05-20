@@ -6,7 +6,9 @@ module.exports = {
     entry: {
         main: "./src/index.js",
         sliderPages: "./src/js/slider-pages.js",
-        homePage: "./src/js/home-page.js"
+        homePage: "./src/js/home-page.js",
+        submenu: "./src/js/submenu.js"
+
 
 
     },

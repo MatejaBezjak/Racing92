@@ -189,7 +189,7 @@
         }
     }
     &__arrow{
-        display: none;
+        display: none !important;
         @include breakpoint(desktop){
             display: block;
             position: absolute;

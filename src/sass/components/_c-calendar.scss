@@ -1,0 +1,31 @@
+.c-calendar{
+    position: relative;
+    @include breakpoint(desktop){
+        margin-bottom: 7.9rem;
+    }
+    &__title{
+        position: relative;
+        font-family: $roboto;
+        font-weight: 900;
+        font-size: 5.5rem;
+        color: $dark-blue;
+        margin: 0 0 1.3rem 3rem;
+        @include breakpoint(desktop){
+            margin: 0 0 2.1rem 8.4rem;
+            line-height: 5.2rem;
+        }
+        span{
+            display: block;
+            color: $gold;
+            margin-left: 5.6rem;
+            font-weight: 900;
+            @include breakpoint(desktop){
+                margin-left: 16.1rem;
+                margin-top: 0.2rem;
+            }
+        }
+    }
+    &__slider-wrapper.b-slider-calendar__wrapper{
+        margin-top: 0 !important;
+    }
+}
