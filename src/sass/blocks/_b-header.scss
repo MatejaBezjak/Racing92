@@ -642,10 +642,20 @@
         
         &-sub{
             display: none;
-            // position: absolute;
+            position: absolute;
+            background: #FFFFFF;
+            width: 50%;
+            height: 100%;
+            top: 9.7rem;
+            right: 0;
+            padding-top: 11.8rem;
             @include breakpoint(desktop){
                 display: block;
                 position: relative;
+                background: none;
+                width: 100%;
+                top: 0;
+                padding: 0;
                 &__list{
                     display: flex;
                     width: auto;
