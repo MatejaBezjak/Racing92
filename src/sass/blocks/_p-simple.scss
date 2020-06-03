@@ -1,0 +1,149 @@
+.p-simple{
+    position: relative;
+    padding-top: 17.9rem;
+    @include breakpoint(desktop){
+        padding-top: 8.8rem;
+    }
+    &__wrapper{
+        position: relative;
+    }
+    &__back{
+        // position: relative;
+        // @include breakpoint(desktop){
+        //     padding-bottom: 3.8rem;
+        // }
+        // &-btn{
+        //     position: relative;
+        //     padding-top: 6rem;
+        //     margin: 0 6.5rem 4.9rem;
+        //     @include breakpoint(desktop){
+        //         margin: 0 36rem;
+        //         padding-top: 4.9rem;
+
+        //     }
+        //     &__trigger{
+        //         position: relative;
+        //         display: flex;
+        //         align-items: center;
+        //         padding: 0.7rem 1.4rem;
+        //         height: 5.2rem;
+        //         @include breakpoint(desktop){
+        //             width: 21.6rem;
+        //             height: 6rem;
+        //             font-size: 1.3rem;
+        //             padding: 0.7rem 3.3rem;
+        //         }
+        //         &-icon{
+        //             position: relative;
+        //             display: inline-block;
+        //             width: 5.3rem;
+        //             height: 3.5rem;
+        //             @include breakpoint(desktop){
+        //                 width: 2.2rem;
+        //                 height: 2.5rem;
+        //             }
+        //             &::before{
+        //                 position: absolute;
+        //                 content: "";
+        //                 background: url(../images/retour.png);
+        //                 background-size: cover;
+        //                 width: 100%;
+        //                 height: 100%;
+        //                 left: -0.2rem;
+        //                 @include breakpoint(desktop){
+        //                     left: -0.6rem;
+        //                 }
+        //             }
+        //         }
+        //         span{
+        //             position: relative;
+        //             display: inline-block;
+        //             font-weight: 400;
+        //         }
+        //     }
+        // }
+    }
+    &__text{
+        position: relative;
+        margin-bottom: 3rem;
+        @include breakpoint(desktop){
+            margin-bottom: 1.7rem;
+        }
+        h1{
+            position: relative;
+            font-family: $roboto;
+            font-weight: 900;
+            font-size: 3.8rem;
+            color: $dark-blue;
+            padding: 0 6.4rem 4.3rem;
+            line-height: 5rem;
+            text-transform: capitalize;
+            @include breakpoint(desktop){
+                padding: 0 36rem;
+            }
+        }
+        p{
+            // position: relative;
+            // font-family: $lato;
+            // font-weight: 400;
+            // font-size: 2.8rem;
+            // color: $black;
+            // line-height: 4.5rem;
+            // padding: 0 6.2rem 4.5rem 6.6rem;
+            // @include breakpoint(desktop){
+            //     padding: 0 36rem 2.8rem 36rem;
+            // }
+        }
+        &-wrapper{
+            position: relative;
+            @include breakpoint(desktop){
+                margin-bottom: 4.1rem;
+            }
+        }
+    }
+    &__content{
+        @include breakpoint(desktop){
+            margin-bottom: 4.9rem;
+        }
+    }
+    // &__content{
+    //     &-text{
+    //         &__regular{
+    //             &--last{
+    //                 @include breakpoint(desktop){
+    //                     padding-bottom: 0;
+    //                 }
+    //             }
+    //         }
+    //     }
+        
+    // }
+    // &__slider{
+    //     @include breakpoint(desktop){
+    //         width: 104rem !important;
+    //         margin: 0 auto 3.6rem;
+    //     }
+    //     &-wrapper{
+    //         @include breakpoint(desktop){
+    //             .slick-list{
+    //                 height: 59.4rem !important;
+    //                 padding: 0 !important;
+    //             }
+    //         }
+    //     }
+    //     &-slide{
+    //         @include breakpoint(desktop){
+    //             height: 59.4rem;
+    //             &__img{
+    //                 height: 59.4rem;
+    //             }
+    //         }
+    //     }
+    // }
+    .b-newsletter::after{
+        @include breakpoint(desktop){
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

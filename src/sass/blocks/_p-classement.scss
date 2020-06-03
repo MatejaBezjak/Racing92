@@ -1,0 +1,221 @@
+.p-classement{
+    position: relative;
+    padding-top: 17.9rem;
+    margin-bottom: 3.3rem;
+    @include breakpoint(desktop){
+        padding-top: 8.7rem;
+        margin-bottom: 6.7rem;
+
+    }
+    .c-match__filter-wrapper{
+        justify-content: flex-start;
+        @include breakpoint(desktop){
+            justify-content: space-evenly;
+        }
+    }
+    .c-match__filter-item{
+        margin-right: 6rem;
+        @include breakpoint(desktop){
+            margin-right: 0;
+            margin-left: -0.2rem;
+        }
+    }
+    &__ranking{
+        position: relative;
+        &-wrapper{
+            position: relative;
+            overflow-x: scroll;
+            @include breakpoint(desktop){
+                overflow-x: auto;
+                max-width: 144rem;
+                margin: auto;
+                width: 100%;
+            }
+        }
+        &-section{
+            position: relative;
+            width: 92.2rem;
+            @include breakpoint(desktop){
+                width: auto;
+                margin: auto;
+                padding: 0 14.5rem 0 48.1rem;
+            }
+            &__list{
+                position: relative;
+                display: flex;
+                height: 9.3rem;
+                padding: 0 2rem 0 27rem;
+                justify-content: space-between;
+                @include breakpoint(desktop){
+                    height: 6.9rem;
+                    padding: 0;
+                    padding: 3.3rem 2rem 0 2rem;
+                }
+                &-item{
+                    position: relative;
+                    font-family: $roboto;
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    @include breakpoint(desktop){
+                        font-size: 1rem;
+                    }
+                    p{
+
+                    }
+                    &__icon{
+                        position: relative;
+                        margin-left: 0.5rem;
+                        @include breakpoint(desktop){
+                            margin-left: 0.8rem;
+                            margin-top: -0.5rem;
+                        }
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            width: 0rem;
+                            height: 0rem;
+                            border-left: 0.5rem solid transparent;
+                            border-right: 0.5rem solid transparent;
+                            border-top: 0.5rem solid $black;
+                        }
+                    }
+                }
+            }
+        }
+        &-board{
+            position: relative;
+            width: 92.2rem;
+            @include breakpoint(desktop){
+                width: 88.4%;
+                margin: auto;
+            }
+            &__item{
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding: 0.3rem 2rem 0 1.7rem;
+                border-bottom: 1px solid $black;
+                height: 13.6rem;
+                @include breakpoint(desktop){
+                    height: 11.4rem;
+                    margin-left: 0.6rem;
+                    padding: 0.3rem 2rem 0 5.8rem;
+                    margin-bottom: 0.2rem;
+
+                }
+                &:last-of-type{
+                    border-bottom: none;
+                }
+                &--racing{
+                    background: $dark-blue;
+                    .p-classement__ranking-board__pos-number{
+                        filter: invert(100%);
+                    }
+                    .p-classement__ranking-board__pos-team__name{
+                        color: $white;
+                    }
+                    @include breakpoint(desktop){
+                        .p-classement__ranking-board__score-list__item{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            &__pos{
+                position: relative;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                margin-right: 3.6rem;
+                @include breakpoint(desktop){
+                    flex-direction: row;
+                    margin-right: 0.5rem;
+                }
+                &-number{
+                    position: relative;
+                    font-family: $roboto;
+                    font-weight: 900;
+                    font-size: 2.5rem;
+                    @include breakpoint(desktop){
+                        font-size: 1.6rem;
+                        margin-right: 4.5rem;
+                        width: 2rem;
+                        text-align: end;
+                    }
+                }
+                &-team{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 15rem;
+                    text-align: center;
+                    margin-right: 3.6rem;
+                    @include breakpoint(desktop){
+                        flex-direction: row;
+                        width: 25rem;
+                        justify-content: left;
+                        margin-right: 3.8rem;
+                    }
+                    &__img{
+                        position: relative;
+                        width: 4.8rem;
+                        margin: 0 auto 1.6rem;
+                        @include breakpoint(desktop){
+                            width: 5.6rem;
+                            margin: 0 2.5rem 0 0;
+                        }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    &__name{
+                        position: relative;
+                        font-family: $lato;
+                        font-weight: 900;
+                        font-size: 2.2rem;
+                        color: $dark-blue;
+                        @include breakpoint(desktop){
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+            &__score{
+                position: relative;
+                width: 71.4%;
+                @include breakpoint(desktop){
+                    width: 67.9%;
+                }
+                &-list{
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    @include breakpoint(desktop){
+                        text-align: left;
+                    }
+                    &__item{
+                        position: relative;
+                        font-family: $lato;
+                        font-weight: 700;
+                        font-size: 2.5rem;
+                        color: $gold;
+                        width: 6.7rem;
+                        @include breakpoint(desktop){
+                            font-weight: 900;
+                            font-size: 1.5rem;
+                            color: $dark-blue;
+                            &:first-of-type{
+                                color: $gold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

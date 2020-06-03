@@ -1,0 +1,113 @@
+.p-phototheque{
+    position: relative;
+    &__title{
+        @include breakpoint(desktop){
+            h1{
+                span{
+                    left: -1rem;
+                }
+            }
+        }
+    }
+    &__wrapper{
+        position: relative;
+        @include breakpoint(desktop){
+            top: -6.1rem;
+        }
+    }
+    // &__galery{
+    //     position: relative;
+    //     width: 100%;
+    //     padding: 23.4rem 6.4rem 0;
+    //     @include breakpoint(desktop){
+    //         padding: 17.5rem 9rem 0;
+    //     }
+    //     &-wrapper{
+    //         position: relative;
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         flex-direction: row;
+    //         width: 100%;
+    //     }
+    //     &-article{
+    //         width: 50%;
+    //         margin-bottom: 5rem;
+    //         @include breakpoint(desktop){
+    //             width: 25%;
+    //         }
+    //         &__wrapper{
+    //             position: relative;
+    //             @include breakpoint(desktop){
+    //                 width: 31.5rem;
+    //                 height: 35.4rem;
+    //                 &:hover{
+    //                     transform: scale(1.08);
+    //                     .p-phototheque__galery-article__info-text{
+    //                         width: 29rem;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         &__img{
+    //             position: relative;
+    //             @include breakpoint(desktop){
+    //                 width: 31.5rem;
+    //                 height: 35.4rem;
+    //             }
+    //             img{
+    //                 width: 100%;
+    //                 height: 100%;
+    //             }
+    //         }
+    //         &__info{
+    //             position: absolute;
+    //             @include breakpoint(desktop){
+    //                 top: 25.5rem;
+    //                 left: 2rem;
+    //             }
+    //             &-tag{
+    //                 position: relative;
+    //             }
+    //             &-date{
+    //                 position: relative;
+    //                 @include breakpoint(desktop){
+    //                     display: none;
+    //                 }
+    //             }
+    //             &-title{
+    //                 position: relative;
+    //             }
+    //             &-text{
+    //                 position: relative;
+    //             }
+    //             &-btn{
+    //                 position: relative;
+    //             }
+    //         }
+    //     }
+    // }
+    &__calendar{
+        @include breakpoint(desktop){
+            top: -1.5rem;
+            padding-top: 5.4rem;
+            margin-bottom: 10.4rem;
+            &::after{
+                position: absolute;
+                content: "";
+                background: $navy-blue;
+                width: 100vw;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 50.3rem;
+                z-index: -1;
+            }
+        }
+        &-title{
+            @include breakpoint(desktop){
+                color: white;
+            }
+        }
+    }
+    
+}

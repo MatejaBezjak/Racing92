@@ -1,5 +1,5 @@
 .c-page-navigator{
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     width: 51.2rem;
@@ -7,8 +7,10 @@
     box-shadow: 0 2rem 4.5rem -1.2rem rgba(0,0,0,0.5);
     background: $light-blue;
     text-transform: capitalize;
+    top: -3rem;
     @include breakpoint(desktop){
         width: 126rem;
+        top: -6.1rem;
     }
     &__container{
         position: relative;
@@ -44,5 +46,14 @@
                 font-weight: 400;
             }
         }
+    }
+}
+
+.c-page-navigator.fixed{
+    position: fixed;
+    top: 17.8rem !important;
+    z-index: 10;
+    @include breakpoint(desktop){
+        top: 8.7rem !important;
     }
 }

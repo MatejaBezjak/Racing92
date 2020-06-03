@@ -1,0 +1,28 @@
+.p-calendrier{
+    position: relative;
+    padding-top: 17.9rem;
+    margin-bottom: 3.3rem;
+    @include breakpoint(desktop){
+        padding-top: 8.7rem;
+        margin-bottom: 5.6rem;
+
+    }
+    .c-match__highlight-info__text{
+        height: 20%;
+        @include breakpoint(desktop){
+            height: 23%;
+        }
+    }
+    .c-match__highlight-info__date{
+        height: 20%;
+        @include breakpoint(desktop){
+            height: 19%;
+        }
+    }
+    .c-match__highlight-info__time{
+        height: 20%;
+        @include breakpoint(desktop){
+            height: 18%;
+        }
+    }
+}

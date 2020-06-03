@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="68px" viewBox="0 0 74 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>VENIR SOUTENIR ROLL@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.00791919192 21.9466522 0.00791919192 21.9466522 7.9739798 0 7.9739798"></polygon>
+        <polygon id="path-3" points="0 0.0531835294 21.9466783 0.0531835294 21.9466783 27.9999835 0 27.9999835"></polygon>
+    </defs>
+    <g id="05_FICHE-JOUEUR-RACING-92" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="05_Desktop_FICHE-JOUEUR-RACING-92_01" transform="translate(-947.000000, -591.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="5308"></rect>
+            <g id="JOUEUR" transform="translate(0.000000, 88.000000)">
+                <g id="VENIR-SOUTENIR-ROLL" transform="translate(947.000000, 503.000000)">
+                    <circle id="Oval" fill="#134669" cx="34" cy="34" r="34"></circle>
+                    <g id="+" transform="translate(52.000000, 35.000000)">
+                        <circle id="Oval" fill="#BF9A56" cx="11" cy="11" r="11"></circle>
+                        <path d="M11.25,4 L11.25,18" id="Path-6" stroke="#FFFFFF" stroke-width="3" transform="translate(11.250000, 11.000000) rotate(-90.000000) translate(-11.250000, -11.000000) "></path>
+                        <path d="M11.25,4 L11.25,18" id="Path-6" stroke="#FFFFFF" stroke-width="3"></path>
+                    </g>
+                    <g id="Group-7" transform="translate(34.000000, 35.000000) rotate(20.000000) translate(-34.000000, -35.000000) translate(23.000000, 15.000000)">
+                        <g id="Group-3">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M21.9466522,7.9739798 L21.9466522,0.00791919192 L16.3365652,0.00791919192 C16.3365652,2.55313131 13.9353478,4.61656566 10.9733478,4.61656566 C8.01126087,4.61656566 5.61004348,2.55313131 5.61004348,0.00791919192 L-4.34782609e-05,0.00791919192 L-4.34782609e-05,7.9739798 L21.9466522,7.9739798 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </g>
+                        <g id="Group-6" transform="translate(0.000000, 12.000000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Clip-5"></g>
+                            <path d="M-1.73913043e-05,0.0531835294 L-1.73913043e-05,27.9999835 L5.61502609,27.9999835 C5.61267826,27.9434894 5.61006957,27.8869953 5.61006957,27.8300071 C5.61006957,25.2360541 8.01128696,23.1332541 10.973287,23.1332541 C13.9353739,23.1332541 16.3365913,25.2360541 16.3365913,27.8300071 C16.3365913,27.8869953 16.3339826,27.9434894 16.3316348,27.9999835 L21.9466783,27.9999835 L21.9466783,0.0531835294 L-1.73913043e-05,0.0531835294 Z" id="Fill-4" fill="#FFFFFF" mask="url(#mask-4)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

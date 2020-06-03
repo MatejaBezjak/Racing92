@@ -63,6 +63,7 @@
         &-wrapper{
             position: relative;
             overflow: hidden;
+            
         }
         &-slide{
             position: relative;
@@ -88,7 +89,7 @@
                 overflow: hidden;
                 &:hover{
                     transform: scale(1.02);
-                    box-shadow: 0 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.5);
+                    box-shadow: 0 1.5rem 2.4rem 0 rgba(0, 0, 0, 0.6);
                     z-index: 2;
                 }
                 
@@ -191,16 +192,15 @@
     &__arrow{
         display: none !important;
         @include breakpoint(desktop){
-            display: block;
+            display: block !important;
             position: absolute;
-            top: 44%;
+            top: 42.4%;
             z-index: 3;
             &--left{
                 left: 18rem;
             }
             &--right{
                 right: 0;
-                top: 45%;
                 z-index: 3 !important;
             }
         }
@@ -217,7 +217,8 @@
         // padding: 0 12.5% 0 18rem !important;
         padding-right: 12.5% !important;
         margin-left: 18rem !important;
-        height: 43.5rem;
+        // height: 43.5rem;
+        height: 46.4rem;
     }
 }
 
@@ -257,3 +258,17 @@
         display: block;
     }
 }
+
+// .b-news__arrow--left .slick-arrow{
+//     display: none !important;
+//     &:hover{
+//         display: block !important;
+//     }
+// }
+
+// .b-news__arrow--right .slick-arrow{
+//     display: none !important;
+//     &:hover{
+//         display: block !important;
+//     }
+// }

@@ -1,0 +1,146 @@
+.c-article{
+    position: relative;
+    width: 100%;
+    &__wrapper{
+        width: 25.6rem;
+        height: 28.8rem;
+        position: relative;
+        @include breakpoint(desktop){
+            width: 36rem;
+            height: 40.5rem;
+            box-shadow: 0 1.2rem 2.4rem 0 transparent;
+            cursor: pointer;
+            transition: all .3s ease;
+            overflow: hidden;
+            &:hover{
+                transform: scale(1.02);
+                box-shadow: 0 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.5);
+                z-index: 2;
+                .c-article__info{
+                    @include breakpoint(desktop){
+                        top: 9rem;
+                    }
+                }
+                .c-article__info-tag{
+                    @include breakpoint(desktop){
+                        display: block;
+                    }
+                }
+                .c-article__info-text{
+                    @include breakpoint(desktop){
+                        display: block;
+                    }
+                }
+                .c-article__info-btn{
+                    @include breakpoint(desktop){
+                        display: block;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    &__img{
+        position: relative;
+        width: 25.6rem;
+        height: 28.8rem;
+        @include breakpoint(desktop){
+            width: 36rem;
+            height: 40.5rem;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__info{
+        position: absolute;
+        top: 16rem;
+        left: 1.5rem;
+        @include breakpoint(desktop){
+            top: 28.3rem;
+            left: 2.2rem;
+            transition: all .3s ease;
+        }
+        &-tag{
+            display: none;
+            @include breakpoint(desktop){
+                display: none;
+                width: 12.8rem;
+                margin-bottom: 2.6rem;
+                transition: all .3s ease;
+            }
+        }
+        &-date{
+            position: relative;
+            font-family: $lato;
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: $light-blue;
+            margin-bottom: 0.7rem;
+            @include breakpoint(desktop){
+                font-size: 1.2rem;
+            }
+        }
+        &-title{
+            position: relative;
+            font-family: $lato;
+            font-weight: 700;
+            font-size: 2.2rem;
+            color: $white;
+            width: 20rem;
+            margin-bottom: 2.5rem;
+            @include breakpoint(desktop){
+                font-size: 1.9rem;
+                line-height: 2.2rem;
+            }
+        }
+        &-text{
+            display: none;
+            @include breakpoint(desktop){
+                display: none;
+                position: relative;
+                font-family: $lato;
+                font-weight: 300;
+                font-size: 1.5rem;
+                color: $white;
+                margin-bottom: 2.5rem;
+                width: 32rem;
+                transition: all .3s ease;
+            }
+        }
+        &-btn{
+            display: none;
+            @include breakpoint(desktop){
+                display: none;
+                width: 13.1rem;
+                transition: all .3s ease;
+            }
+        }
+    }
+}
+
+// .b-news__slider-article:hover .b-news__slider-article__info{
+//     @include breakpoint(desktop){
+//         top: 9rem;
+//     }
+// }
+
+// .b-news__slider-article:hover .b-news__slider-article__info-tag{
+//     @include breakpoint(desktop){
+//         display: block;
+//     }
+// }
+
+// .b-news__slider-article:hover .b-news__slider-article__info-text{
+//     @include breakpoint(desktop){
+//         display: block;
+//     }
+// }
+
+// .b-news__slider-article:hover .b-news__slider-article__info-btn{
+//     @include breakpoint(desktop){
+//         display: block;
+//     }
+// }

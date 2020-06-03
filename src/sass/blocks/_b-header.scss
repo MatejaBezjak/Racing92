@@ -8,6 +8,20 @@
     &__main{
         position: relative;
         width: 100%;
+        z-index: 2;
+        &::after{
+            position: absolute;
+            content: "";
+            background: transparent;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.5);
+            @include breakpoint(desktop){
+                display: none;
+            }
+        }
     }
     &__wrapper{
         @include breakpoint(desktop){
@@ -72,6 +86,9 @@
         width: 39%;
         @include breakpoint(desktop){
             width: 25.7%;
+            span{
+                cursor: pointer;
+            }
         }
         &::after{
             position: absolute;
@@ -136,21 +153,50 @@
     }
     &__search{
         display: none;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        z-index: 1;
         @include breakpoint(desktop){
             position: relative;
             display: block;
             padding-top: 0.1rem;
             width: 27.7%;
             height: 2.8rem;
-            &-wrapper{
+        }
+        &-wrapper{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            height: 9.7rem;
+            @include breakpoint(desktop){
                 display: flex;
                 width: 100%;
                 align-items: center;
+                height: auto;
             }
-            &-field{
+        }
+        &-field{
+            position: relative;
+            width: 100%;
+            @include breakpoint(desktop){
                 position: relative;
                 width: 77.2%;
-                input{
+            }
+            input{
+                position: relative;
+                background: transparent;
+                font-family: $roboto;
+                font-weight: 300;
+                font-size: 2.2rem;
+                border: none;
+                border-left: 0.2rem solid white;
+                padding: 0 0 0 2rem;
+                margin-left: -0.7rem;
+                color: $white;
+                height: 3rem;
+                @include breakpoint(desktop){
                     position: relative;
                     background: transparent;
                     font-family: $roboto;
@@ -161,22 +207,98 @@
                     padding: 0 0 0 1.1rem;
                     color: $white;
                     cursor: pointer;
+                    height: auto;
                 }
             }
-            &-submit{
+        }
+        &-submit{
+            position: relative;
+            left: 1.4rem;
+            top: -0.2rem;
+            @include breakpoint(desktop){
                 position: relative;
-                // top: -0.4rem;
+                left: 0;
                 top: 50%;
-                &__icon{
+            }
+            &__icon{
+                display: block;
+                    position: relative;
+                    width: 2.8rem;
+                    height: 2.8rem;
+                @include breakpoint(desktop){
                     display: block;
                     position: relative;
                     width: 1.3rem;
                     height: 2.3rem;
-                    img{
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    @include breakpoint(desktop){
                         width: 100%;
                         height: 100%;
                         filter: invert(100%);
                         cursor: pointer;
+                    }
+                    
+                }
+            }
+        }
+    }
+    &__mob-social{
+        display: none;
+        position: fixed;
+        top: 19.2rem;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        @include breakpoint(desktop){
+            display: none;
+        }
+        &__wrapper{
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 9.7rem;
+            padding-left: 6.4rem;
+            margin: 0;
+            width: 100%;
+            background: $light-blue;
+            p{
+                font-family: $roboto;
+                font-weight: 500;
+                font-size: 2rem;
+                line-height: 2.4rem;
+                width: 18rem;
+                margin-right: 0.7rem;
+            }
+        }
+        &__list{
+            position: relative;
+            width: 50.2%;
+            &-item{
+                position: relative;
+                &__icon{
+                    position: relative;
+                    &--facebook{
+                        width: 1.8rem;
+                        height: auto;
+                    }
+                    &--twitter{
+                        width: 3.6rem;
+                        height: auto;
+                    }
+                    &--instagram{
+                        width: 3rem;
+                        height: auto;
+                    }
+                    &--youtube{
+                        width: 5.6rem;
+                        height: 4rem;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
                     }
                 }
             }
@@ -189,6 +311,7 @@
         height: 4rem;
         right: 6.5rem;
         top: 3.3rem;
+        z-index: 5;
         @include breakpoint(desktop){
             display: none;
         }
@@ -211,49 +334,91 @@
     }
     &__navigation{
         display: none;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: $dark-blue;
+        padding-top: 9.7rem;
+        // overflow-y: auto;
+        // overflow-x: hidden;
         @include breakpoint(desktop){
             display: block;
             position: relative;
             width: 100%;
             padding-bottom: 1.3rem;
-            &-wrapper{
+            height: auto;
+            padding-top: 0;
+        }
+        &-wrapper{
+            position: relative;
+            width: 100%;
+            // overflow-y: scroll;
+            @include breakpoint(desktop){
                 position: relative;
                 max-width: 87.1rem;
                 width: 100%;
                 margin: auto;
             }
-            &-list{
+        }
+        &-list{
+            position: relative;
+            width: 100%;
+            left: 0;
+            padding-top: 21.1rem;
+            @include breakpoint(desktop){
                 position: relative;
                 display: flex;
                 justify-content: space-between;
                 width: 87.1rem;
                 margin-left: 4.6rem;
-                &__item{
-                    position: relative;
+                padding-top: 0;
+            }
+            &__item{
+                // position: relative;
+                font-family: $lato;
+                font-size: 2.5rem;
+                color: $white;
+                text-transform: uppercase;
+                width: 26rem;
+                margin: 0 auto 5.15rem;
+                letter-spacing: 0.01em;
+                transition:  all .3s ease;
+                @include breakpoint(desktop){
+                    // position: relative;
                     font-family: $lato;
                     font-size: 1.2rem;
                     color: $white;
                     margin: 0;
-                    a{
-                        font-weight: 400;
-                        @include breakpoint(desktop){
-                            cursor: pointer;
-                        }
+                    width: auto;
+                    transition:  all .3 ease;
+                    &:hover{
+                        transition:  all .3 ease;
+                        color: $gold;
                     }
-                    &::after{
+                }
+                &-link{
+                    font-weight: 700;
+                    @include breakpoint(desktop){
+                        font-weight: 400;
+                        cursor: pointer;
+                        padding: 1rem 3.6rem 1rem 3.6rem;
+
+                    }
+                }
+                &::after{
+                    @include breakpoint(desktop){
                         position: absolute;
                         content: '';
                         width: 0.1rem;
                         height: 1.3rem;
                         background: $white;
                     }
-                    &--last{
+                }
+                &--last{
+                    @include breakpoint(desktop){
                         &::after{
                             display: none;
                         }
-                    }
-                    a{
-                        padding: 1rem 3.6rem 1rem 3.6rem;
                     }
                 }
             }
@@ -261,5 +426,341 @@
     }
     &__submenu{
         display: none;
+        position: absolute;
+        background: $white;
+        width: 50%;
+        height: 100%;
+        top: 9.7rem;
+        right: 0;
+        padding-top: 11.8rem;
+        @include breakpoint(desktop){
+            transition:  all .3s ease;
+            width: 100vw;
+            height: auto;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: -4.6rem;
+            // top: 6.9rem;
+            top: 13.9rem;
+            // padding-top: 0.1rem;
+            padding-top: 0;
+            &--actualite{
+                // top: 9.8rem;
+                top: 8.9rem;
+            }
+            &--les-pros{
+                top: 11.8rem;
+            }
+            &--nos-equipes{
+                top: 15rem;
+            }
+            &--le-club{
+                top: 11.8rem;
+            }
+        }
+        &-wrapper{
+            width: 100%;
+            @include breakpoint(desktop){
+                max-width: 144rem;
+                margin: auto;
+                height: auto;
+            }
+        }
+        &-list{
+            @include breakpoint(desktop){
+                display: flex;
+                justify-content: center;
+                // align-items: center;
+                width: 97rem;
+                margin-left: 23.8rem;
+                height: auto;
+                padding-top: 3.8rem;
+                // padding-bottom: 3.8rem;
+                padding-bottom: 0.8rem;
+                // &--actualite{
+                //     padding-bottom: 0.8rem;
+                // }
+            }
+            &__item{
+                font-family: $lato;
+                font-weight: 700;
+                font-size: 1.9rem;
+                text-transform: uppercase;
+                width: 22rem;
+                margin: 0 0 4.4rem 6.1rem;
+                @include breakpoint(desktop){
+                    font-size: 1rem;
+                    width: auto;
+                    margin-left: 2.4rem;
+                    margin-bottom: 0;
+                    position: relative;
+                    transition:  all .3s ease;
+                    &:last-of-type{
+                        .b-header__submenu-list__item-link{
+                            &::after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                &-link{
+                    display: inline-block;
+                    font-weight: 700;
+                    color: $black;
+                    @include breakpoint(desktop){
+                        // padding: 0;
+                        padding: 0 1.6rem 0 0;
+                        margin-left: -0.2rem;
+                        border: none;
+                        cursor: pointer;
+                        transition:  all .3s ease;
+                        // border-right: 1px solid $black;
+                        // padding-right: 2.4rem;
+                        // min-height: 3rem;
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            display: block;
+                            width: 1px;
+                            height: 1.4rem;
+                            background: $black;
+                            top: -0.2rem;
+                            left: 100%;
+                        }
+                        &:hover{
+                            color: $gold;
+                            transition:  all .3s ease;
+                        }
+                    }
+                }
+            }
+        }
+        &-social{
+            display: none;
+            position: fixed;
+            background: $light-blue;
+            width: 100%;
+            @include breakpoint(desktop){
+                display: block;
+                position: relative;
+                margin-top: 10.2rem;
+                width: 100vw;
+                left: 50%;
+                transform: translateX(-50%);
+                transition:  all .3s ease;
+                // top: 18.2rem;
+                &--actualite{
+                    margin-top: 2.5rem;
+                    // margin-top: 0.5rem;
+                }
+                &--les-pros{
+                    margin-top: 1.6rem;
+                }
+                &--nos-equipes{
+                    margin-top: 1.6rem;
+                }
+                &--le-club{
+                    margin-top: 3.4rem;
+                }
+            }
+            .c-social{
+                // display: flex;
+                // align-items: center;
+                // height: 9.7rem;
+                // padding-left: 6.4rem;
+                // margin: 0;
+                // width: 100%;
+                @include breakpoint(desktop){
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 4.8rem;
+                    width: 80.7rem;
+                    margin: auto;
+                    justify-content: space-between;
+                    padding: 0 21.9rem 0 20.1rem;
+                }
+                &__list{
+                    // width: 50.2%;
+                    @include breakpoint(desktop){
+                        width: 17.6rem;
+                    }
+                    &-item{
+                        &__icon{
+                            &--facebook{
+                                @include breakpoint(desktop){
+                                    width: 0.7rem;
+                                    height: 1.5rem;
+                                }
+                            }
+                            &--twitter{
+                                @include breakpoint(desktop){
+                                    width: 1.7rem;
+                                    height: 1.4rem;
+                                }
+                            }
+                            &--instagram{
+                                // width: 2.8rem;
+                                // height: 2.8rem;
+                                @include breakpoint(desktop){
+                                    width: 1.4rem;
+                                    height: 1.4rem;
+                                }
+                            }
+                            &--youtube{
+                                // width: 5.6rem;
+                                // height: 4rem;
+                                @include breakpoint(desktop){
+                                    width: 2.6rem;
+                                    height: 1.7rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &__wrapper{
+                p{
+                    font-family: $roboto;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                    width: 18rem;
+                    margin-right: 0.7rem;
+                    @include breakpoint(desktop){
+                        font-size: 1.2rem;
+                        width: 19.2rem;
+                        margin-left: 0;
+                        color: $black;
+                        text-transform: none;
+                    }
+                    
+                }
+            }
+        }
+        
+        &-sub{
+            display: none;
+            // position: absolute;
+            @include breakpoint(desktop){
+                display: block;
+                position: relative;
+                &__list{
+                    display: flex;
+                    width: auto;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    padding: 0;
+                    // margin: 0.5rem 0 0 -0.4rem;
+                    margin: 0.8rem 0 0 -0.6rem;
+                    transition:  all .3s ease;
+                    &-item{
+                        font-family: $lato;
+                        font-size: 1.2rem;
+                        text-transform: capitalize;
+                        margin-bottom: 0.9rem;
+                        transition:  all .3s ease;
+                        &__link{
+                            border-right: none;
+                            padding: 0;
+                            font-weight: 300;
+                            color: $navy-blue;
+                            transition:  all .3s ease;
+                            cursor: pointer;
+                            &:hover{
+                                transition:  all .3s ease;
+                                color: $dark-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+
+.active{
+    .b-header{
+        position: fixed;
+        &__wrapper{
+            display: flex;
+            padding: 1.1rem 6.4rem 0 6.4rem;
+        }
+        &__logo--racing{
+            width: 4rem;
+            overflow: hidden;
+            margin: 0;
+            top: 1.6rem;
+            img{
+                width: 14.3rem;
+                max-width: none;
+                height: auto;
+            }
+        }
+        &__top{
+            width: 41.7rem;
+            border: none;
+            padding: 2.9rem 0 3.7rem 0;
+            margin: 0;
+        }
+        &__links{
+            margin: 0;
+            margin-left: 4.5rem;
+            
+        }
+        &__link{
+            width: 45%;
+            &::after{
+                top: -0.7rem;
+                left: 16.8rem;
+                height: 3.1rem;
+            }
+            span{
+                font-size: 1.7rem;
+                letter-spacing: 0.037em;    
+            }
+            &-icon--ticket{
+                &::after{
+                    width: 2.4rem;
+                    height: 2.9rem;
+                    top: -0.8;
+                }
+                
+            }
+            &-icon--shirt{
+                &::after{
+                    width: 2.3rem;
+                    height: 2.9rem;
+                    margin-left: 0.5rem;
+                }
+                
+            }
+        }
+        &__search{
+            display: block;
+        }
+        &__mob-social{
+            display: block;
+        }
+        &__navigation{
+            display: block;
+            &-social{
+                display: block;
+            }
+        }
+        
+    }
+}
+
+// .active-sub{
+//     .b-header__navigation-list{
+//         left: -25%;
+//     }
+//     .b-header__submenu{
+//         display: block;
+//         left: 75%;
+//     }
+// }
+

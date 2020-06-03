@@ -1,14 +1,16 @@
 .p-actu__content{
     position: relative;
     @include breakpoint(desktop){
-        margin-top: -6.1rem;
+        .c-page-navigator{
+            top: -6.1rem;
+        }
     }
     &-container{
         position: relative;
-        padding-top: 5.3rem;
-        // @include breakpoint(desktop){
-        //     padding-top: 0;
-        // }
+        padding-top: 14.3rem;
+        @include breakpoint(desktop){
+            padding-top: 10.7rem;
+        }
         // &:nth-of-type(even){
         //     .b-news .b-news__title{
         //         @include breakpoint(desktop){

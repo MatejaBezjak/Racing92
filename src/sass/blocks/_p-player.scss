@@ -1,0 +1,925 @@
+.p-player{
+    position: relative;
+    padding-top: 17.9rem;
+    margin-bottom: 6rem;
+    @include breakpoint(desktop){
+        padding-top: 8.7rem;
+        margin-bottom: 8rem;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        width: 100vw;
+        height: 114rem;
+        background: $light-blue;
+        top: 0;
+        z-index: -1;
+        @include breakpoint(desktop){
+            height: 73.7rem;
+        }
+    }
+    &__wrapper{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 100vw;
+            height: 20.7rem;
+            background: $white;
+            top: 14.2rem;
+            z-index: 0;
+            @include breakpoint(desktop){
+                top: 22.8rem;
+            }
+        }
+    }
+    &__hero{
+        position: relative;
+        z-index: 1;
+        padding-bottom: 4.7rem;
+        @include breakpoint(desktop){
+            padding-bottom: 6.7rem;
+        }
+        &-wrapper{
+            position: relative;
+            padding: 3.2rem 6.4rem 2rem;
+            @include breakpoint(desktop){
+                padding: 2.5rem 9rem 8.6rem;
+
+            }
+        }
+        &-background{
+            display: none;
+            @include breakpoint(desktop){
+                display: block;
+                position: absolute;
+                width: 40.8rem;
+                height: 63.6rem;
+                opacity: 0.2;
+                filter: saturate(0);
+                right: 0;
+                top: -1.4rem;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-btn{
+            position: absolute;
+            margin-left: -2.2rem;
+            @include breakpoint(desktop){
+                margin-left: 0;
+                position: absolute;
+            }
+            
+        }
+        &-main{
+            position: relative;
+            @include breakpoint(desktop){
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+            }
+            &__player{
+                position: relative;
+                margin-bottom: 1.1rem;
+                &-img{
+                    position: relative;
+                    width: 45.3rem;
+                    height: 52.9rem;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &-icon{
+                    position: absolute;
+                    width: 7.5rem;
+                    a{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                        p{
+                            display: none;
+                        }
+                    }
+                    &--maillot{
+                        // position: absolute;
+                        top: 15.3rem;
+                        left: 7rem;
+                        @include breakpoint(desktop){
+                            top: 17.9rem;
+                            left: 4.3rem;
+                        }
+                        p{
+                            display: none;
+                        }
+                    }
+                    &--ticket{
+                        // position: absolute;
+                        top: 46.6rem;
+                        right: 12rem;
+                        @include breakpoint(desktop){
+                            top: 47.9rem;
+                            right: 8.9rem;
+                        }
+                        p{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+            &__info{
+                position: relative;
+                @include breakpoint(desktop){
+                    margin-top: 11.5rem;
+                    width: 45%;
+                }
+                &-pos{
+                    position: relative;
+                    font-family: $lato;
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                    margin-bottom: 0.4rem;
+                }
+                &-name{
+                    position: relative;
+                    font-family: $lato;
+                    font-weight: 900;
+                    font-size: 5.5rem;
+                    color: $gold;
+                    margin-bottom: 4.2rem;
+                    @include breakpoint(desktop){
+                        margin-bottom: 5.4rem;
+                    }
+                    span{
+                        display: block;
+                        font-weight: 900;
+                        color: $white;
+                        @include breakpoint(desktop){
+                            display: inline-block;
+                        }
+                    }
+                }
+                &-spec{
+                    position: relative;
+                    @include breakpoint(desktop){
+                        padding-left: 9rem;
+                    }
+                    &__country{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 2.6rem;
+                        padding-left: 3rem;
+                        @include breakpoint(desktop){
+                            margin-bottom: 1.6rem;
+                            padding-left: 2.7rem;
+                        }
+                        &-flag{
+                            position: relative;
+                            width: 6.9rem;
+                            margin-right: 3rem;
+                            @include breakpoint(desktop){
+                                width: 4.2rem;
+                                height: 2.8rem;
+                                margin-right: 1.3rem;
+                            }
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        &-name{
+                            position: relative;
+                            font-family: $lato;
+                            font-weight: 900;
+                            font-size: 2.5rem;
+                            @include breakpoint(desktop){
+                                font-size: 2rem;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                    &__personal{
+                        position: relative;
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-bottom: 2.4rem;
+                        @include breakpoint(desktop){
+                            margin-bottom: 1rem;
+                        }
+                        &-item{
+                            position: relative;
+                            position: relative;
+                            font-family: $lato;
+                            font-weight: 700;
+                            font-size: 2.5rem;
+                            width: 29%;
+                            padding-left: 3rem;
+                            @include breakpoint(desktop){
+                                font-size: 2rem;
+                                font-weight: 400;
+                                width: 24.8%;
+                                padding-left: 2.8rem;
+                            }
+                            &::after{
+                                position: absolute;
+                                content: "";
+                                width: 1px;
+                                height: 2rem;
+                                top: 0.5rem;
+                                right: 0;
+                                background: $gold;
+                                @include breakpoint(desktop){
+                                    top: 0;
+                                }
+                            }
+                            &:nth-of-type(2){
+                                width: 71%;
+                                padding-left: 4.2rem;
+                                margin-bottom: 3.6rem;
+                                @include breakpoint(desktop){
+                                    margin-bottom: 2.1rem;
+                                    padding-left: 3.5rem;
+                                }
+                                &::after{
+                                    display: none;
+                                }
+                            }
+                            &:nth-of-type(4){
+                                padding-left: 4.2rem;
+                                @include breakpoint(desktop){
+                                    padding-left: 3.5rem;
+                                    width: 26.4%;
+                                }
+                            }
+                            &:last-of-type{
+                                padding-left: 4.6rem;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                @include breakpoint(desktop){
+                                    padding-left: 3.2rem;
+                                }
+                                &::after{
+                                    display: none;
+                                }
+                            }
+                            &__icon{
+                                position: relative;
+                                width: 2.4rem;
+                                margin-right: 2.4rem;
+                                @include breakpoint(desktop){
+                                    width: 2.6rem;
+                                }
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            p{
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    &__match{
+                        position: relative;
+                        width: 51.2rem;
+                        padding: 2.9rem 0 2.2rem;
+                        margin: 0 auto;
+                        background: $dark-blue;
+                        @include breakpoint(desktop){
+                            width: 39.2rem;
+                            padding: 2.3rem 0 2.5rem;
+                            margin: 0;
+                        }
+                        &-season{
+                            position: relative;
+                            font-family: $lato;
+                            font-size: 2.2rem;
+                            font-weight: 900;
+                            color: $white;
+                            text-transform: uppercase;
+                            margin: 0 0 3rem 4.4rem;
+                            @include breakpoint(desktop){
+                                font-size: 1.5rem;
+                                margin: 0 0 1.8rem 3.6rem;
+                            }
+                            span{
+                                font-weight: 900;
+                                color: $light-blue;
+                                line-height: 2.3rem;
+                            }
+                        }
+                        &-points{
+                            position: relative;
+                            font-family: $lato;
+                            font-size: 5rem;
+                            display: flex;
+                            margin-bottom: 2rem;
+                            @include breakpoint(desktop){
+                                margin-bottom: 0;
+                            }
+                            &__point{
+                                position: relative;
+                                font-weight: 900;
+                                color: $white;
+                                width: 33.33%;
+                                padding-left: 4.4rem;
+                                @include breakpoint(desktop){
+                                    padding-left: 3.7rem;
+                                    width: 34.8%;
+                                    &:nth-of-type(2){
+                                        width: 33%;
+                                    }
+                                    &:last-of-type{
+                                        width: 20%;
+                                    }
+                                }
+                                &::after{
+                                    position: absolute;
+                                    content: "";
+                                    width: 1px;
+                                    height: 3.4rem;
+                                    background: $white;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    right: 0;
+                                }
+                                &:last-of-type{
+                                    &::after{
+                                        display: none;
+                                    }
+                                }
+                                span{
+                                    display: block;
+                                    color: $light-blue;
+                                    font-size: 2.5rem;
+                                    font-weight: 700;
+                                    line-height: 2.3rem;
+                                    @include breakpoint(desktop){
+                                        font-size: 1.9rem;
+                                        line-height: 1.7rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__intro{
+        position: relative;
+        &-wrapper{
+            position: relative;
+            @include breakpoint(desktop){
+                display: flex;
+            }
+        }
+        &-stats{
+            position: relative;
+            display: flex;
+            padding-bottom: 9.8rem;
+            margin-bottom: 7.6rem;
+            @include breakpoint(desktop){
+                width: 50%;
+                margin-bottom: 9.7rem;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                width: 35rem;
+                height: 0.2rem;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+                background: $black;
+                @include breakpoint(desktop){
+                    width: 0.2rem;
+                    height: 35rem;
+                    left: 100%;
+                    bottom: 1.1rem;
+                }
+            }
+            &__awards{
+                position: relative;
+                width: 50%;
+                display: flex;
+                &-title{
+                    position: absolute;
+                    font-family: $roboto;
+                    font-weight: 900;
+                    font-size: 7rem;
+                    color: $gold;
+                    transform: rotate(270deg);
+                    top: 17rem;
+                    left: -13rem;
+                    @include breakpoint(desktop){
+                        top: 17rem;
+                        left: -8rem;
+                    }
+                }
+                &-detail{
+                    position: relative;
+                    padding-left: 12.8rem;
+                    @include breakpoint(desktop){
+                        padding-left: 18rem;
+                    }
+                    &__prize{
+                        position: relative;
+                        font-family: $roboto;
+                        font-size: 5rem;
+                        color: $gold;
+                        display: flex;
+                        align-items: baseline;
+                        margin-bottom: 1rem;
+                        @include breakpoint(desktop){
+                            margin-bottom: 0.4rem;
+                        }
+                        &-times{
+                            font-weight: 900;
+                        }
+                        &-num{
+                            font-weight: 900;
+                            font-size: 7rem;
+                            color: $navy-blue;
+                        }
+                        &-icon{
+                            position: relative;
+                            width: 2.8rem;
+                            top: -0.8rem;
+                            @include breakpoint(desktop){
+                                width: 3.8rem;
+                                top: 0.1rem;
+                            }
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    &__year{
+                        position: relative;
+                        font-family: $lato;
+                        font-weight: 400;
+                        font-size: 2.2rem;
+                        color: $gold;
+                        margin-bottom: 1.2rem;
+                        @include breakpoint(desktop){
+                            font-size: 1.8rem;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                    &__status{
+                        position: relative;
+                        font-family: $lato;
+                        font-weight: 900;
+                        font-size: 2.2rem;
+                        color: $navy-blue;
+                        @include breakpoint(desktop){
+                            font-size: 1.6rem;
+                            line-height: 1.8rem;
+                            letter-spacing: 0.008em;
+                        }
+                        span{
+                            display: block;
+                            font-weight: 300;
+                            color: $gold;
+                        }
+                    }
+                }
+            }
+            &__points{
+                position: relative;
+                width: 50%;
+                display: flex;
+                &-title{
+                    position: absolute;
+                    font-family: $roboto;
+                    font-weight: 900;
+                    font-size: 4rem;
+                    color: $navy-blue;
+                    transform: rotate(270deg);
+                    top: 10.8rem;
+                    left: -3.7rem;
+                    @include breakpoint(desktop){
+                        left: -4rem;
+                        top: 10.5rem;
+                    }
+                    span{
+                        font-weight: 900;
+                        color: $black;
+                    }
+                }
+                &-list{
+                    position: relative;
+                    padding-left: 12.8rem;
+                    margin-top: -0.7rem;
+                    @include breakpoint(desktop){
+                        margin-top: 0;
+                        padding-left: 13.8rem;;
+                    }
+                    &__item{
+                        position: relative;
+                        font-family: $lato;
+                        font-weight: 900;
+                        font-size: 7rem;
+                        color: $light-blue;
+                        margin-bottom: 3.2rem;
+                        @include breakpoint(desktop){
+                            margin-bottom: 2.8rem;
+                        }
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            width: 3.5rem;
+                            height: 1px;
+                            background: $gold;left: 0.3rem;
+                            bottom: -2.2rem;
+                            @include breakpoint(desktop){
+                                bottom: -1.8rem;
+                            }
+                        }
+                        &:last-of-type{
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        span{
+                            display: block;
+                            font-weight: 700;
+                            font-size: 1.9rem;
+                            color: $black;
+                            @include breakpoint(desktop){
+                                margin-top: -0.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-text{
+            position: relative;
+            @include breakpoint(desktop){
+                width: 50%;
+                padding-top: 5.3rem;
+            }
+            &__paragraph{
+                position: relative;
+                font-weight: 400;
+                color: $navy-blue;
+                padding: 0 6.4rem;
+                margin-bottom: 4.5rem;
+                @include breakpoint(desktop){
+                    font-size: 1.4rem;
+                    line-height: 2.1rem;
+                    padding: 0 9rem;
+                    margin-bottom: 2rem;
+                }
+            }
+            .c-simple__text-intro::first-letter{
+                margin-left: -1.7rem;
+                margin-right: 0;
+                @include breakpoint(desktop){
+                    margin-left: -0.9rem;
+                    margin-right: -0.3rem;
+                    vertical-align: inherit;
+                }
+            }
+        }
+    }
+    &__career{
+        position: relative;
+        &-wrapper{
+            position: relative;
+            @include breakpoint(desktop){
+                display: flex;
+            }
+        }
+        &-inter{
+            position: relative;
+            background: $dark-blue;
+            @include breakpoint(desktop){
+                width: 50%;
+            }
+            &__wrapper{
+                position: relative;
+                padding: 8.3rem 9.7rem 2.3rem;
+                @include breakpoint(desktop){
+                    padding: 5.1rem 17.9rem 2.3rem;
+                }
+            }
+            &__title{
+                position: relative;
+                font-family: $raleway;
+                font-weight: 900;
+                font-size: 4rem;
+                line-height: 4rem;
+                color: $white;
+                margin-left: 6.6rem;
+                margin-bottom: 3.6rem;
+                @include breakpoint(desktop){
+                    line-height: 4.2rem;
+                    margin-left: 1rem;
+                    margin: 0 0 3.6rem 1rem;
+                }
+                span{
+                    display: block;
+                    font-weight: 900;
+                    color: $gold;
+                    margin-left: 5rem;
+                    @include breakpoint(desktop){
+                        margin-left: 5.1rem;
+                    }
+                }
+            }
+            &__table{
+                position: relative;
+                &-item{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 4.8rem;
+                    margin-bottom: 4.4rem;
+                    @include breakpoint(desktop){
+                        padding: 0 0.8rem 1.4rem 0.9rem;
+                        margin-bottom: 2rem;
+                    }
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 1px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: 0;
+                        background: $white;
+                        @include breakpoint(desktop){
+                            // width: 0.2rem;
+                            // height: 35rem;
+                            // left: 100%;
+                            // bottom: 1.1rem;
+                        }
+                    }
+                    &:last-of-type{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    &__icon{
+                        position: relative;
+                        width: 7.8rem;
+                        margin: 0 2.5rem 0 2.3rem;
+                        @include breakpoint(desktop){
+                            width: 6.8rem;
+                            height: 6.6rem;
+                            margin: 0 3.3rem 0 0;
+                        }
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    &__details{
+                        position: relative;
+                        &-year{
+                            position: relative;
+                            font-family: $lato;
+                            font-weight: 400;
+                            font-size: 2rem;
+                            margin-bottom: 0.7rem;
+                            color: $white;
+                            @include breakpoint(desktop){
+                                font-size: 1.2rem;
+                            }
+                        }
+                        &-cup{
+                            position: relative;
+                            font-family: $lato;
+                            font-weight: 900;
+                            font-size: 2.8rem;
+                            color: $white;
+                            line-height: 3.2rem;
+                            @include breakpoint(desktop){
+                                font-size: 1.8rem;
+                                line-height: 1.8rem;
+                            }
+                            span{
+                                display: block;
+                                font-weight: 400;
+                                font-size: 2.5rem;
+                                @include breakpoint(desktop){
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-club{
+            position: relative;
+            background: $navy-blue;
+            @include breakpoint(desktop){
+                width: 50%;
+            }
+            &__wrapper{
+                position: relative;
+                padding: 8.2rem 9.7rem 4rem;
+                @include breakpoint(desktop){
+                    padding-top: 5.1rem;
+                    padding: 5.1rem 18rem 0;
+                }
+            }
+            &__title{
+                position: relative;
+                font-family: $raleway;
+                font-weight: 900;
+                font-size: 4rem;
+                line-height: 4rem;
+                color: $white;
+                margin: 0 0 2.6rem 10.3rem;
+                @include breakpoint(desktop){
+                    line-height: 4.2rem;
+                    margin: 0 0 2.8rem 5.8rem;
+                }
+                span{
+                    display: block;
+                    font-weight: 900;
+                    color: $gold;
+                    margin-left: 9.1rem;
+                    @include breakpoint(desktop){
+                        margin-left: 9.2rem;
+                    }
+                }
+            }
+            &__table{
+                position: relative;
+                &-item{
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 3.2rem 2.9rem 1.8rem;
+                    margin-bottom: 4.4rem;
+                    @include breakpoint(desktop){
+                        padding: 0 0.8rem 2.1rem 1.1rem;
+                        margin-bottom: 2rem;
+                    }
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 1px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: 0;
+                        background: $white;
+                        @include breakpoint(desktop){
+                            // width: 0.2rem;
+                            // height: 35rem;
+                            // left: 100%;
+                            // bottom: 1.1rem;
+                        }
+                    }
+                    &:last-of-type{
+                        margin-bottom: 0;
+                        padding-bottom: 2.5rem;
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    &__team{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        &-icon{
+                            position: relative;
+                            width: 8.6rem;
+                            margin-right: 2.2rem;
+                            @include breakpoint(desktop){
+                                width: 7.4rem;
+                                margin-right: 2.5rem;
+                            }
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        &-details{
+                            position: relative;
+                            &__year{
+                                position: relative;
+                                font-family: $lato;
+                                font-weight: 400;
+                                font-size: 2rem;
+                                margin-bottom: 0.6rem;
+                                color: $white;
+                                @include breakpoint(desktop){
+                                    font-size: 1.2rem;
+                                }
+                            }
+                            &__cup{
+                                position: relative;
+                                font-family: $lato;
+                                font-weight: 900;
+                                font-size: 2.8rem;
+                                color: $white;
+                                line-height: 3.2rem;
+                                @include breakpoint(desktop){
+                                    font-size: 1.8rem;
+                                    line-height: 1.8rem;
+                                }
+                                span{
+                                    display: block;
+                                    font-weight: 400;
+                                    font-size: 2.5rem;
+                                    @include breakpoint(desktop){
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__flag{
+                        position: relative;
+                        width: 5.7rem;
+                        @include breakpoint(desktop){
+                            width: 4.1rem;
+                        }
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__video{
+        position: relative;
+        @include breakpoint(desktop){
+            margin-bottom: 4.7rem;
+            .b-video__top-title{
+                left: 82.7rem;
+                padding: 0;
+                top: 1.8rem;
+            }
+            .b-video__top::after{
+                top: 33.7rem;
+                height: 15.2rem;
+            }
+            .b-video__wrapper::after{
+                top: 8.5rem;
+            }
+            .b-video__top{
+                padding-bottom: 0.7rem;
+            }
+        }
+        
+    }
+    &__photos{
+        position: relative;
+        @include breakpoint(desktop){
+            margin-bottom: 3.5rem;
+            .b-news{
+                margin-top: 0;
+            }
+            .b-news__slider{
+                top: -0.4rem;
+            }
+            .b-news__title{
+                margin: 0 0 0 20.6rem;
+            }
+            .b-news::after{
+                height: 24.2rem;
+                top: 14.7rem;
+            }
+        }
+    }
+    &__news{
+        position: relative;
+        @include breakpoint(desktop){
+            margin-bottom: 3.8rem;
+            .b-news{
+                margin-top: 0;
+            }
+            .b-news__slider{
+                top: -0.4rem;
+            }
+            .b-news__title{
+                margin: 0 0 0 20.6rem;
+            }
+            .b-news::after{
+                height: 24.2rem;
+                top: 14.7rem;
+            }
+        }
+    }
+}

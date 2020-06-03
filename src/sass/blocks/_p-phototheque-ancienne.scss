@@ -1,0 +1,32 @@
+.p-phototheque-ancienne__title{
+    @include breakpoint(desktop){
+        left: 9.3rem;
+    }
+    h1{
+        @include breakpoint(desktop){
+            letter-spacing: 0.007em;
+        }
+        
+        span{
+            @include breakpoint(desktop){
+                margin-left: -1.3rem;
+            }
+            &:nth-of-type(2){
+                color: $white;
+                display: block;
+                @include breakpoint(desktop){
+                    display: inline-block;
+                    margin-left: -0.2rem;
+                }
+            }
+        }
+        
+        
+    }
+}
+.p-phototheque-ancienne__filters-filter.c-filters__filter{
+    width: 80.9%;
+    @include breakpoint(desktop){
+        width: 33.5%;
+    }
+}

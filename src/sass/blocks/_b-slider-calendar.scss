@@ -6,12 +6,32 @@
     @include breakpoint(desktop){
         padding: 0 8.5rem !important;
     }
+    
     &__wrapper{
         margin-top: -4.5rem !important;
         margin-bottom: 7rem !important;
         @include breakpoint(desktop){
-        margin-top: -5.9rem !important;
-        z-index: 3;
+            margin-top: -5.9rem !important;
+            z-index: 3;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            width: 51rem;
+            height: 32rem;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 4.5rem 0.3rem rgba(0,0,0,0.9);
+            background: rgba(0,0,0,0.5);
+            z-index: -1;
+            top: 6rem;
+            @include breakpoint(desktop){
+                width: 113rem;
+                height: 25rem;
+                top: 1.4rem;
+            background: rgba(0,0,0,0.4);
+
+            }
         }
     }
     &__slide{
@@ -200,4 +220,8 @@
     @include breakpoint(desktop){
         padding: 0 !important;
     }
+}
+
+.slick-arrow.slick-disabled {
+    display: none !important;
 }

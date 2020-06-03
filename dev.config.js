@@ -7,7 +7,12 @@ module.exports = {
         main: "./src/index.js",
         sliderPages: "./src/js/slider-pages.js",
         homePage: "./src/js/home-page.js",
-        submenu: "./src/js/submenu.js"
+        submenu: "./src/js/submenu.js",
+        pageNavigation: "./src/js/navigator.js",
+        filterBar: "./src/js/filter-bar.js",
+        crossPageNav: "./src/js/crosspage-navigation.js",
+        searchBar: "./src/js/search-bar.js"
+
 
 
 

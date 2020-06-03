@@ -1,0 +1,447 @@
+.c-simple{
+    &__back{
+        position: relative;
+        @include breakpoint(desktop){
+            padding-bottom: 3.8rem;
+        }
+        &-btn{
+            position: relative;
+            padding-top: 6rem;
+            margin: 0 0 4.9rem 6.5rem;
+            @include breakpoint(desktop){
+                margin: 0 36rem;
+                padding-top: 4.9rem;
+
+            }
+            &__trigger{
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding: 0.7rem 1.4rem;
+                height: 5.2rem;
+                background-color: $navy-blue;
+                border: 1px solid $navy-blue;
+                width: 16rem;
+                @include breakpoint(desktop){
+                    width: 21.6rem;
+                    height: 6rem;
+                    font-size: 1.3rem;
+                    padding: 0.7rem 3.3rem;
+                }
+                &-icon{
+                    position: relative;
+                    display: inline-block;
+                    width: 5.3rem;
+                    height: 3.5rem;
+                    @include breakpoint(desktop){
+                        width: 2.2rem;
+                        height: 2.5rem;
+                    }
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        background: url(../images/retour.png);
+                        background-size: cover;
+                        width: 100%;
+                        height: 100%;
+                        left: -0.2rem;
+                        @include breakpoint(desktop){
+                            left: -0.6rem;
+                        }
+                    }
+                }
+                span{
+                    position: relative;
+                    display: inline-block;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    &__text-intro{
+        position: relative;
+        font-family: $lato;
+        font-weight: 700;
+        font-size: 2.8rem;
+        color: $navy-blue;
+        line-height: 4.5rem;
+        padding-bottom: 4.5rem;
+        padding: 0 6.2rem 6.9rem 6.6rem;
+        @include breakpoint(desktop){
+            font-size: 1.6rem;
+            padding: 0 36.2rem 3.2rem 36.2rem;
+            line-height: 3.1rem;
+        }
+        &::first-letter{
+            font-weight: 900;
+            font-size: 7rem;
+            color: $gold;
+            vertical-align: text-bottom;
+            margin-left: -3.2rem;
+            margin-right: 2rem;
+            @include breakpoint(desktop){
+                font-size: 5rem;
+                margin-right: 0;
+            }
+        }
+    }
+    &__text-regular{
+        position: relative;
+        font-family: $lato;
+        font-weight: 400;
+        font-size: 2.8rem;
+        color: $black;
+        line-height: 4.5rem;
+        padding: 0 6.2rem 4.5rem 6.6rem;
+        @include breakpoint(desktop){
+            font-size: 1.4rem;
+            padding: 0 35.6rem 2.8rem 36rem;
+            line-height: 2.9rem;
+            letter-spacing: 0.001em;
+        }
+        span{
+            color: $gold;
+            font-weight: 900;
+            @include breakpoint(desktop){
+                font-weight: 700;
+            }
+        }
+        &--underlined{
+            color: $black !important;
+            font-weight: 400 !important;
+            text-decoration: underline;
+        }
+        &--link{
+            color: $gold;
+        }
+    }
+    &__text-list{
+        position: relative;
+        padding: 0 9.2rem 6.4rem 15rem;
+        @include breakpoint(desktop){
+            padding: 0 36rem 3.1rem 44.4rem;
+        }
+        &__item{
+            position: relative;
+            font-family: $lato;
+            font-weight: 700;
+            font-size: 2.8rem;
+            color: $navy-blue;
+            line-height: 4.5rem;
+            @include breakpoint(desktop){
+                font-size: 1.4rem;
+                line-height: 2.9rem;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                display: block;
+                width: 1.3rem;
+                height: 1.3rem;
+                border-radius: 50%;
+                background: $navy-blue;
+                left: -4rem;
+                top: 1.65rem;
+                @include breakpoint(desktop){
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    left: -1.4rem;
+                    top: 1.3rem;
+                }
+            }
+        }
+    }
+    &__slider{
+        position: relative;
+        margin: 2.3rem 0 9rem 0;
+        @include breakpoint(desktop){
+            width: 90rem !important;
+            margin: 1.2rem auto 4rem;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            background-color: $light-blue;
+            width: 38.4rem;
+            height: 42.6rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -3rem;
+            z-index: -1;   
+            @include breakpoint(desktop){
+                width: 100vw;
+                height: 24.2rem;
+                top: 13.3rem;
+    
+            }         
+        }
+        &-wrapper{
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            .slick-list{
+                @include breakpoint(desktop){
+                    height: 55rem !important;
+                }
+            }
+        }
+        &-slide{
+            position: relative;
+            width: 64rem !important;
+            height: 33.9rem;
+            @include breakpoint(desktop){
+                width: 90rem !important;
+                height: 51rem;
+            }
+            &__img{
+                position: relative;
+                width: 100%;
+                height: 33.9rem;
+                @include breakpoint(desktop){
+                    height: 51rem;
+                    margin-bottom: 2rem;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                span{
+                    display: none;
+                    @include breakpoint(desktop){
+                        display: block;
+                        position: absolute;
+                        font-family: $roboto;
+                        font-weight: 700;
+                        font-size: 1rem;
+                        color: $white;
+                        bottom: 1.7rem;
+                        left: 2.2rem;
+                    }
+                }
+            }
+            &__info{
+                display: none;
+                @include breakpoint(desktop){
+                    display: block;
+                    font-family: $lato;
+                    font-size: 1.2rem;
+                    color: $navy-blue;
+                    margin-left: 5.2rem;
+                    p{
+                        position: relative;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+        &-arrow{
+            display: none !important;
+            @include breakpoint(desktop){
+                display: block !important;
+                top: 40.4%;
+                width: 6.7rem;
+                height: 6.9rem;
+                &--left{
+                    left: -6.7rem;
+                }
+                &--right{
+                    right: -6.7rem;
+                }
+            }
+        }
+    }
+    &__video{
+        position: relative;
+        margin-bottom: 6.4rem;
+        @include breakpoint(desktop){
+            margin-bottom: 3.6rem;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            background-color: $light-blue;
+            width: 38.4rem;
+            height: 42.6rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -3rem;
+            z-index: -1;   
+            @include breakpoint(desktop){
+                width: 100vw;
+                height: 24.2rem;
+                top: 13.6rem;
+    
+            }         
+        }
+        &-wrapper{
+            position: relative;
+            width: 54rem;
+            height: 36rem;
+            margin: auto;
+            @include breakpoint(desktop){
+                width: 90rem;
+                height: 51.2rem;
+                margin: 0 auto 1.9rem;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-icon{
+            @include breakpoint(desktop){
+                width: 9rem;
+                height: 9rem;
+            }
+        }
+        &-copyright{
+            display: none;
+            @include breakpoint(desktop){
+                display: block;
+                position: absolute;
+                font-family: $roboto;
+                font-weight: 700;
+                font-size: 1rem;
+                color: $white;
+                bottom: 1.8rem;
+                left: 2.2rem;
+            }
+        }
+        &-info{
+            display: none;
+            @include breakpoint(desktop){
+                display: block;
+                position: relative;
+                font-family: $lato;
+                font-size: 1.2rem;
+                color: $navy-blue;
+                margin-left: 32.2rem;
+                p{
+                    position: relative;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    &__quote{
+        position: relative;
+        padding: 0 2.6rem 0 6.4rem;
+        margin: 4.5rem 0 10.5rem 0;
+        @include breakpoint(desktop){
+            margin: 0 0 2.9rem 0;
+            padding: 2.2rem 0 0 0;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            background: $light-blue;
+            width: 100vw;
+            height: 65.5%;
+            top: 7.8%;
+            left: 0;
+            z-index: -1;
+            @include breakpoint(desktop){
+                top: 12%;
+                height: 13.8rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &-text{
+            position: relative;
+            font-family: $roboto;
+            font-size: 3rem;
+            color: $gold;
+            line-height: 4rem;
+            padding: 0 4rem 3.9rem 12.8rem;
+            background: $white;
+            @include breakpoint(desktop){
+                // position: absolute;
+                position: relative;
+                font-size: 1.8rem;
+                line-height: 3.3rem;
+                padding: 0 12rem 1.6rem 13.3rem;
+                width: 37.3%;
+                // right: 18rem;
+                margin-left: 72.3rem;
+            }
+            p{
+                position: relative;
+                font-weight: 500;
+
+            }
+            &::before{
+                position: absolute;
+                content: open-quote;
+                color: $navy-blue;
+                font-family: $raleway;
+                font-weight: 500;
+                font-size: 20rem;
+                top: 4rem;
+                left: 4rem;
+                @include breakpoint(desktop){
+                    font-size: 17rem;
+                    top: 1.7rem;
+                    left: 7.2rem;
+                }
+            }
+        }
+        &-quotee{
+            position: relative;
+            display: none;
+            @include breakpoint(desktop){
+                display: flex;
+                flex-direction: row-reverse;
+                padding: 0 29.6rem;
+                margin-top: -1.8rem;
+                align-items: baseline;
+            }
+            &__img{
+                position: relative;
+                // width: 6.4rem;
+                // height: 6.4rem;
+                @include breakpoint(desktop){
+                    width: 4.6rem;
+                    height: auto;
+                }
+                &::after{
+                    display: none;
+                    @include breakpoint(desktop){
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        background: $white;
+                        border-radius: 50%;
+                        border: 1px solid black;
+                        width: 5.9rem;
+                        height: 5.9rem;
+                        z-index: 0;
+                        top: -0.2rem;
+                        background: transparent;
+                        left: -0.8rem;
+                    }
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p{
+                position: relative;
+                font-family: $lato;
+                font-weight: 400;
+                font-size: 0.945rem;
+                margin-right: 1.6rem;
+                color: $black;
+                line-height: 2.8rem;
+                letter-spacing: 0.023em;
+                bottom: 0.3rem;
+                span{
+                    position: relative;
+                    color: $navy-blue;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

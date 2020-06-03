@@ -1,30 +1,14 @@
 $(document).ready(function(){
-    $('.p-article__slider-wrapper').slick({
+    $('#article-slider').slick({
         variableWidth: true,
         autoplay: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: true,
+        centerMode: false,
         adaptiveHeight: true,
         infinite: true,
-        arrows: false
-        // responsive: [
-        //     {
-        //         breakpoint: 1441,
-        //         settings: {
-        //             centerMode: false,
-        //             slidesToShow: 5,
-        //             slidesToScroll: 1
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //             centerMode: false,
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1
-        //         }
-        //     }
-        // ]
+        arrows: true,
+        prevArrow: '#article-slider-arrow-left',
+        nextArrow: '#article-slider-arrow-right'
     });
 });

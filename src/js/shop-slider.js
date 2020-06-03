@@ -9,7 +9,9 @@ $(document).ready(function(){
       adaptiveHeight: true,
       infinite: true,
       // rows: 0,
-      arrows: false,
+      arrows: true,
+      prevArrows: '.b-shop__arrow--left',
+      nextArrow: '.b-shop__arrow--right',
       responsive: [
           {
               breakpoint: 768,

@@ -7,9 +7,11 @@ $(document).ready(function(){
     slidesToScroll: 4,
     centerMode: false,
     adaptiveHeight: true,
-    infinite: true,
+    infinite: false,
     // rows: 0,
-    arrows: false,
+    arrows: true,
+    prevArrow: '.b-video__slider-thumbs__arrow--left',
+    nextArrow: '.b-video__slider-thumbs__arrow--right',
     responsive: [
         {
             breakpoint: 1441,
@@ -18,7 +20,10 @@ $(document).ready(function(){
                 centerPadding: false,
                 // rows: 0,
                 slidesToShow: 4,
-                slidesToScroll: 3
+                slidesToScroll: 3,
+                arrows: true,
+                prevArrow: '.b-video__slider-thumbs__arrow--left',
+                nextArrow: '.b-video__slider-thumbs__arrow--right'
             }
         },
         {

@@ -36,11 +36,48 @@
                                     <input type="text" placeholder="votre recherche">
                                 </div>
                                 <div class="b-header__search-submit">
-                                    <span class="b-header__search-submit__icon">
-                                        <img srcset="./images/recherche.svg">
-                                    </span>
+                                    <a href="resultats-recherche_page.html">
+                                        <span class="b-header__search-submit__icon">
+                                            <img srcset="./images/recherche.svg">
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="b-header__mob-social">
+                        <div class="b-header__mob-social__wrapper c-social">
+                            <p>Le racing sur les réseaux sociaux</p>
+                            <ul class="b-header__mob-social__list c-social__list">
+                                <li class="b-header__mob-social__list-item c-social__list-item">
+                                    <a target="_blank" href="https://www.facebook.com/Racing92Officiel/">
+                                        <div class="b-header__mob-social__list-item__icon b-header__mob-social__list-item__icon--facebook c-social__list-item__icon--facebook">
+                                            <img srcset="./images/facebook-dark-blue.png">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="b-header__mob-social__list-item c-social__list-item">
+                                    <a target="_blank" href="https://twitter.com/Racing92">
+                                        <div class="b-header__mob-social__list-item__icon b-header__mob-social__list-item__icon--twitter c-social__list-item__icon c-social__list-item__icon--twitter">
+                                            <img srcset="./images/twitter-dark-blue.png">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="b-header__mob-social__list-item c-social__list-item">
+                                    <a target="_blank" href="https://www.instagram.com/Racing92/">
+                                        <div class="b-header__mob-social__list-item__icon b-header__mob-social__list-item__icon--instagram c-social__list-item__icon c-social__list-item__icon--instagram">
+                                            <img srcset="./images/instagram-dark-blue.png">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="b-header__mob-social__list-item c-social__list-item">
+                                    <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
+                                        <div class="b-header__mob-social__list-item__icon b-header__mob-social__list-item__icon--youtube c-social__list-item__icon c-social__list-item__icon--youtube">
+                                            <img srcset="./images/youtube-white.png">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="b-header__burger">
@@ -56,267 +93,445 @@
             <div class="b-header__navigation">
                 <div class="b-header__navigation-wrapper">
                     <ul class="b-header__navigation-list">
-                        <li class="b-header__navigation-list__item">
-                            <a href>ACTUALITÉ</a>
-                            <div class="b-header__submenu">
+                        <li id="actualite" class="b-header__navigation-list__item">
+                            <a class="b-header__navigation-list__item-link" href="">ACTUALITÉ</a>
+                            <div id="actualite-sub" class="b-header__submenu b-header__submenu--actualite">
                                 <div class="b-header__submenu-wrapper">
-                                    <ul>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Racing Actu</a>
+                                    <ul class="b-header__submenu-list b-header__submenu-list--actualite">
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="actu_page.html">Racing Actu</a>
                                         </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Racing TV</a>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="tv_page.html">Racing TV</a>
                                         </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Photothèque</a>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="phototheque_page.html">Photothèque</a>
                                         </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Photothèque Historique</a>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="phototheque-ancienne_page.html">Photothèque Historique</a>
                                         </li>
                                     </ul>
+                                    <div class="b-header__submenu-social b-header__submenu-social--actualite">
+                                        <div class="b-header__submenu-social__wrapper c-social">
+                                            <p>Le racing sur les réseaux sociaux</p>
+                                            <ul class="b-header__submenu-social__list c-social__list">
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://www.facebook.com/Racing92Officiel/">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--facebook c-social__list-item__icon c-social__list-item__icon--facebook">
+                                                            <img srcset="./images/facebook-dark-blue.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://twitter.com/Racing92">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--twitter c-social__list-item__icon c-social__list-item__icon--twitter">
+                                                            <img srcset="./images/twitter-dark-blue.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://www.instagram.com/Racing92/">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--instagram c-social__list-item__icon c-social__list-item__icon--instagram">
+                                                            <img srcset="./images/instagram-dark-blue.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--youtube c-social__list-item__icon c-social__list-item__icon--youtube">
+                                                            <img srcset="./images/youtube-white.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="b-header__navigation-list__item">
-                            <a href>LES PROS</a>
-                            <div class="b-header__submenu">
+                        <li id="les-pros" class="b-header__navigation-list__item">
+                            <a class="b-header__navigation-list__item-link" href="">LES PROS</a>
+                            <div id="les-pros-sub" class="b-header__submenu b-header__submenu--les-pros">
                                 <div class="b-header__submenu-wrapper">
-                                    <ul>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Effectif</a>
+                                    <ul class="b-header__submenu-list">
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="effectif_page.html">Effectif</a>
                                         </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Staff</a>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="effectif_page.html">Staff</a>
                                         </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Résultats</a>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="resultats_page.html">Résultats</a>
                                         </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Classement</a>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="classement_page.html">Classement</a>
                                         </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Calendrier</a>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="camendrier_page.html">Calendrier</a>
                                         </li>
-                                        <li class="b-header__submenu-item b-header__submenu-item__sub">
-                                            <a href>Racing Lab</a>
+                                        <li class="b-header__submenu-list__item b-header__submenu-list__item__sub">
+                                            <a class="b-header__submenu-list__item-link" href>Racing Lab</a>
                                             <div class="b-header__submenu-sub">
-                                                <ul>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Optimisation des crampons</a>
+                                                <ul class="b-header__submenu-sub__list">
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="article_page.html">Optimisation des crampons</a>
                                                     </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Séminaire de performance</a>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="article_page.html">Séminaire de performance</a>
                                                     </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Optimisation de la mêlée</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="b-header__navigation-list__item">
-                            <a href>NOS ÉQUIPES</a>
-                            <div class="b-header__submenu">
-                                <div class="b-header__submenu-wrapper">
-                                    <ul>
-                                        <li class="b-header__submenu-item b-header__submenu-item__sub">
-                                            <a href>Centre de Formation</a>
-                                            <div class="b-header__submenu-sub">
-                                                <ul>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Effectif</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Lycée</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="b-header__submenu-item b-header__submenu-item__sub">
-                                            <a href>Espoirs</a>
-                                            <div class="b-header__submenu-sub">
-                                                <ul>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Effectif</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Staff</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Résultats</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Classement</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Calendrier</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="b-header__submenu-item b-header__submenu-item__sub">
-                                            <a href>Junior crabos</a>
-                                            <div class="b-header__submenu-sub">
-                                                <ul>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Effectif</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Staff</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Résultats</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Classement</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Calendrier</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Contact</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="b-header__submenu-item b-header__submenu-item__sub">
-                                            <a href>Cadet Alamercery</a>
-                                            <div class="b-header__submenu-sub">
-                                                <ul>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Effectif</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Staff</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Résultats</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Classement</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Calendrier</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Contact</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="b-header__submenu-item b-header__submenu-item__sub">
-                                            <a href>Cadet Gaudermen</a>
-                                            <div class="b-header__submenu-sub">
-                                                <ul>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Effectif</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Staff</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Résultats</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Classement</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Calendrier</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Contact</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="b-header__submenu-item b-header__submenu-item__sub">
-                                            <a href>Féminines</a>
-                                            <div class="b-header__submenu-sub">
-                                                <ul>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Effectif</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Résultats</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Classement</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Calendrier</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="b-header__submenu-item b-header__submenu-item__sub">
-                                            <a href>Ecole de rugby</a>
-                                            <div class="b-header__submenu-sub">
-                                                <ul>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Informations</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Contact</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Cotisation</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="b-header__navigation-list__item">
-                            <a href>LE CLUB</a>
-                            <div class="b-header__submenu">
-                                <div class="b-header__submenu-wrapper">
-                                    <ul>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Histoire</a>
-                                        </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Hospitalités</a>
-                                        </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Partenaires</a>
-                                        </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Tribunes Expériences</a>
-                                        </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Supporters</a>
-                                        </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Mascotte</a>
-                                        </li>
-                                        <li class="b-header__submenu-item">
-                                            <a href>Infrastructures</a>
-                                        </li>
-                                        <li class="b-header__submenu-item b-header__submenu-item__sub">
-                                            <a href>Coeur Ciel & Blanc</a>
-                                            <div class="b-header__submenu-sub">
-                                                <ul>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Aesio- Aide à l'emploi</a>
-                                                    </li>
-                                                    <li class="b-header__submenu-item">
-                                                        <a href>Aressif</a>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="article_page.html">Optimisation de la mêlée</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                     </ul>
+                                    <div class="b-header__submenu-social b-header__submenu-social--les-pros">
+                                        <div class="b-header__submenu-social__wrapper c-social">
+                                            <p>Le racing sur les réseaux sociaux</p>
+                                            <ul class="b-header__submenu-social__list c-social__list">
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://www.facebook.com/Racing92Officiel/">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--facebook c-social__list-item__icon c-social__list-item__icon--facebook">
+                                                            <img srcset="./images/facebook-dark-blue.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://twitter.com/Racing92">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--twitter c-social__list-item__icon c-social__list-item__icon--twitter">
+                                                            <img srcset="./images/twitter-dark-blue.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://www.instagram.com/Racing92/">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--instagram c-social__list-item__icon c-social__list-item__icon--instagram">
+                                                            <img srcset="./images/instagram-dark-blue.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--youtube c-social__list-item__icon c-social__list-item__icon--youtube">
+                                                            <img srcset="./images/youtube-white.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="b-header__navigation-list__item"><a href>COEUR CIEL & BLANC</a></li>
-                        <li class="b-header__navigation-list__item b-header__navigation-list__item--last"><a href="https://forum.racing92.fr/">FORUM</a></li>
+                        <li id="nos-equipes" class="b-header__navigation-list__item">
+                            <a class="b-header__navigation-list__item-link" href="">NOS ÉQUIPES</a>
+                            <div id="nos-equipes-sub" class="b-header__submenu b-header__submenu--nos-equipes">
+                                <div class="b-header__submenu-wrapper">
+                                    <ul class="b-header__submenu-list">
+                                        <li class="b-header__submenu-list__item b-header__submenu-list__item__sub">
+                                            <a class="b-header__submenu-list__item-link" href>Centre de Formation</a>
+                                            <div class="b-header__submenu-sub">
+                                                <ul class="b-header__submenu-sub__list">
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Effectif</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="article_page.html">Lycée</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="b-header__submenu-list__item b-header__submenu-list__item__sub">
+                                            <a class="b-header__submenu-list__item-link" href>Espoirs</a>
+                                            <div class="b-header__submenu-sub">
+                                                <ul class="b-header__submenu-sub__list">
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Effectif</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Staff</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="resultats_page.html">Résultats</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="classement_page.html">Classement</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="calendrier_page.html">Calendrier</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="b-header__submenu-list__item b-header__submenu-list__item__sub">
+                                            <a class="b-header__submenu-list__item-link" href>Junior crabos</a>
+                                            <div class="b-header__submenu-sub">
+                                                <ul class="b-header__submenu-sub__list">
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Effectif</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Staff</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="resultats_page.html">Résultats</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="classement_page.html">Classement</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="calendrier_page.html">Calendrier</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="contact_page.html">Contact</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="b-header__submenu-list__item b-header__submenu-list__item__sub">
+                                            <a class="b-header__submenu-list__item-link" href>Cadet Alamercery</a>
+                                            <div class="b-header__submenu-sub">
+                                                <ul class="b-header__submenu-sub__list">
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Effectif</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Staff</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="resultats_page.html">Résultats</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="classement_page.html">Classement</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="calendrier_page.html">Calendrier</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="contact_page.html">Contact</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="b-header__submenu-list__item b-header__submenu-list__item__sub">
+                                            <a class="b-header__submenu-list__item-link" href>Cadet Gaudermen</a>
+                                            <div class="b-header__submenu-sub">
+                                                <ul class="b-header__submenu-sub__list">
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Effectif</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Staff</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="resultats_page.html">Résultats</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="classement_page.html">Classement</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="calendrier_page.html">Calendrier</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="contact_page.html">Contact</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="b-header__submenu-list__item b-header__submenu-list__item__sub">
+                                            <a class="b-header__submenu-list__item-link" href>Féminines</a>
+                                            <div class="b-header__submenu-sub">
+                                                <ul class="b-header__submenu-sub__list">
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Effectif</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="resultats_page.html">Résultats</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="classement_page.html">Classement</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="calendrier_page.html">Calendrier</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="b-header__submenu-list__item b-header__submenu-list__item__sub">
+                                            <a class="b-header__submenu-list__item-link" href>Ecole de rugby</a>
+                                            <div class="b-header__submenu-sub">
+                                                <ul class="b-header__submenu-sub__list">
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="article_page.html">Informations</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="contact_page.html">Contact</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="https://www.e-cotiz.com/app/site/10656-cotisationracing20192020">Cotisation</a>
+                                        </li>
+                                    </ul>
+                                    <div class="b-header__submenu-social b-header__submenu-social--nos-equipes">
+                                        <div class="b-header__submenu-social__wrapper c-social">
+                                            <p>Le racing sur les réseaux sociaux</p>
+                                            <ul class="b-header__submenu-social__list c-social__list">
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://www.facebook.com/Racing92Officiel/">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--facebook c-social__list-item__icon c-social__list-item__icon--facebook">
+                                                            <img srcset="./images/facebook-dark-blue.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://twitter.com/Racing92">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--twitter c-social__list-item__icon c-social__list-item__icon--twitter">
+                                                            <img srcset="./images/twitter-dark-blue.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://www.instagram.com/Racing92/">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--instagram c-social__list-item__icon c-social__list-item__icon--instagram">
+                                                            <img srcset="./images/instagram-dark-blue.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--youtube c-social__list-item__icon c-social__list-item__icon--youtube">
+                                                            <img srcset="./images/youtube-white.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="le-club" class="b-header__navigation-list__item">
+                            <a class="b-header__navigation-list__item-link" href="">LE CLUB</a>
+                            <div id="le-club-sub" class="b-header__submenu b-header__submenu--le-club">
+                                <div class="b-header__submenu-wrapper">
+                                    <ul class="b-header__submenu-list">
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="notre-histire_page">Histoire</a>
+                                        </li>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="notre-histire_page">Hospitalités</a>
+                                        </li>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="partenaires_page">Partenaires</a>
+                                        </li>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="notre-histire_page">Tribunes Expériences</a>
+                                        </li>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="partenaires_page">Supporters</a>
+                                        </li>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="article_page">Mascotte</a>
+                                        </li>
+                                        <li class="b-header__submenu-list__item">
+                                            <a class="b-header__submenu-list__item-link" href="notre-histire_page">Infrastructures</a>
+                                        </li>
+                                        <li class="b-header__submenu-list__item b-header__submenu-list__item__sub">
+                                            <a class="b-header__submenu-list__item-link" href>Coeur Ciel & Blanc</a>
+                                            <div class="b-header__submenu-sub">
+                                                <ul class="b-header__submenu-sub__list">
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="article_page">Aesio- Aide à l'emploi</a>
+                                                    </li>
+                                                    <li class="b-header__submenu-sub__list-item">
+                                                        <a class="b-header__submenu-sub__list-item__link" href="article_page">Aressif</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="b-header__submenu-social b-header__submenu-social--le-club">
+                                        <div class="b-header__submenu-social__wrapper c-social">
+                                            <p>Le racing sur les réseaux sociaux</p>
+                                            <ul class="b-header__submenu-social__list c-social__list">
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://www.facebook.com/Racing92Officiel/">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--facebook c-social__list-item__icon c-social__list-item__icon--facebook">
+                                                            <img srcset="./images/facebook-dark-blue.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://twitter.com/Racing92">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--twitter c-social__list-item__icon c-social__list-item__icon--twitter">
+                                                            <img srcset="./images/twitter-dark-blue.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://www.instagram.com/Racing92/">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--instagram c-social__list-item__icon c-social__list-item__icon--instagram">
+                                                            <img srcset="./images/instagram-dark-blue.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="b-header__submenu-social__list-item c-social__list-item">
+                                                    <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
+                                                        <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--youtube c-social__list-item__icon c-social__list-item__icon--youtube">
+                                                            <img srcset="./images/youtube-white.png">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-header__navigation-list__item"><a class="b-header__navigation-list__item-link" href="article_page.html">COEUR CIEL & BLANC</a></li>
+                        <li class="b-header__navigation-list__item b-header__navigation-list__item--last"><a class="b-header__navigation-list__item-link" href="https://forum.racing92.fr/">FORUM</a></li>
                     </ul>
+                    <!-- <a class="b-header__navigation-logo--arena" href="https://www.parisladefense-arena.com/#utm_source=autopromo&utm_medium=site-racing92&utm_campaign=menu-logo-plda" target="_blank">
+                        <img srcset="./images/parisladefensearena.svg" alt="parisladefensearena-Logo">
+                    </a> -->
+                    <!-- <div class="b-header__navigation-social">
+                        <div class="b-header__navigation-social__wrapper c-social">
+                            <p>Le racing sur les réseaux sociaux</p>
+                            <ul class="b-header__navigation-social__list c-social__list">
+                                <li class="b-header__navigation-social__list-item c-social__list-item">
+                                    <a target="_blank" href="https://www.facebook.com/Racing92Officiel/">
+                                        <div class="b-header__navigation-social__list-item__icon b-header__navigation-social__list-item__icon--facebook c-social__list-item__icon c-social__list-item__icon--facebook">
+                                            <img srcset="./images/facebook-white.png">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="b-header__navigation-social__list-item c-social__list-item">
+                                    <a target="_blank" href="https://twitter.com/Racing92">
+                                        <div class="b-header__navigation-social__list-item__icon b-header__navigation-social__list-item__icon--twitter c-social__list-item__icon c-social__list-item__icon--twitter">
+                                            <img srcset="./images/twitter-white.png">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="b-header__navigation-social__list-item c-social__list-item">
+                                    <a target="_blank" href="https://www.instagram.com/Racing92/">
+                                        <div class="b-header__navigation-social__list-item__icon b-header__navigation-social__list-item__icon--instagram c-social__list-item__icon c-social__list-item__icon--instagram">
+                                            <img srcset="./images/instagram-white.png">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="b-header__navigation-social__list-item c-social__list-item">
+                                    <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
+                                        <div class="b-header__navigation-social__list-item__icon b-header__navigation-social__list-item__icon--youtube c-social__list-item__icon c-social__list-item__icon--youtube">
+                                            <img srcset="./images/youtube-white.png">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </header>
@@ -339,7 +554,7 @@
                         <p class="b-main-slider__slide-description__btn b-main-slider__slide-description__btn--main c-btn c-btn--navy-blue">LIRE L'ARTICLE</p>
                     </div>
                 </a>
-                <a class="b-main-slider__slide c-overlay" style="background-image: url('https://www.racing92.fr//content/uploads/2020/04/facebook-copie-1-900x600.jpg');">
+                <a href="article_page.html" class="b-main-slider__slide c-overlay" style="background-image: url('https://www.racing92.fr//content/uploads/2020/04/facebook-copie-1-900x600.jpg');">
                     <div class="b-main-slider__slide-img">
                         <img src="https://www.racing92.fr//content/uploads/2020/04/facebook-copie-1-320x300.jpg">
                     </div>
@@ -353,7 +568,7 @@
                         <p class="b-main-slider__slide-description__btn c-btn c-btn--navy-blue">LIRE L'ARTICLE</p>
                     </div>
                 </a>
-                <a class="b-main-slider__slide c-overlay" style="background-image: url('https://www.racing92.fr//content/uploads/2020/04/S1-Ope_tablettes_1080x1080-1-1-900x600.jpg');">
+                <a href="article_page.html" class="b-main-slider__slide c-overlay" style="background-image: url('https://www.racing92.fr//content/uploads/2020/04/S1-Ope_tablettes_1080x1080-1-1-900x600.jpg');">
                     <div class="b-main-slider__slide-img">
                         <img src="https://www.racing92.fr//content/uploads/2020/04/S1-Ope_tablettes_1080x1080-1-1-320x300.jpg">
                     </div>
@@ -395,7 +610,7 @@
                         <p>Stade Français</p>
                     </div>
                     <div class="b-slider-calendar__slide-btn">
-                        <a class="b-slider-calendar__slide-btn-triger c-btn c-btn--navy-blue" href="https://www.racing92.fr/">voir le résumé</a>
+                        <a class="b-slider-calendar__slide-btn-triger c-btn c-btn--navy-blue" href="resultats_page">voir le résumé</a>
                     </div>
                 </div>
                 <div class="b-slider-calendar__slide">
@@ -508,10 +723,10 @@
                 </div>
             </div>
             <div class="b-slider-calendar__arrow b-slider-calendar__arrow--left c-arrow">
-                <span></span>
+                <img src="./images/arrow-left.png">
             </div>
             <div class="b-slider-calendar__arrow b-slider-calendar__arrow--right c-arrow">
-                <span></span>
+                <img src="./images/arrow-right.png">
             </div>
         </div>
         <div class="b-poster-slider  wrapper">
@@ -543,8 +758,8 @@
                     <div class="b-news__slider-wrapper">
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
-                                    <div class="b-news__slider-article__img c-overlay>">
+                                <a href="article_page.html">
+                                    <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/01/EPSNuxIWsAETV27-360x405.jpg">
                                     </div>
                                     <div class="b-news__slider-article__info">
@@ -559,7 +774,7 @@
                         </div>
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/03/C5I2287-360x405.jpg">
                                     </div>
@@ -575,7 +790,7 @@
                         </div>
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/12/P1_04286BDOK-min-360x405.jpg">
                                     </div>
@@ -591,7 +806,7 @@
                         </div>
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/04/J6-Racing-92-v-COVID-19-360x405.jpg">
                                     </div>
@@ -607,7 +822,7 @@
                         </div>
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
+                                <a href="harticle_page.html">
                                     <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2018/04/12913-ercc-qdf-asm-clermont-vs-racing-92-orig-1-360x405.jpg">
                                     </div>
@@ -623,7 +838,7 @@
                         </div>
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/03/Icon_RUH_020220_11_615-e1583165668312-360x405.jpg">
                                     </div>
@@ -639,7 +854,7 @@
                         </div>
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/02/P2_04448BDOK-min-360x405.jpg">
                                     </div>
@@ -655,7 +870,7 @@
                         </div>
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/02/ALC_3213-web-min-360x405.jpg">
                                     </div>
@@ -671,7 +886,7 @@
                         </div>
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/02/P2_02767BDOK-min-360x405.jpg">
                                     </div>
@@ -687,7 +902,7 @@
                         </div>
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/09/Paris-La-Défense-Arena-360x405.jpg">
                                     </div>
@@ -703,7 +918,7 @@
                         </div>
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/02/ALC_3152-web-min-360x405.jpg">
                                     </div>
@@ -719,7 +934,7 @@
                         </div>
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/02/DSC_1028-min-360x405.jpg">
                                     </div>
@@ -735,7 +950,7 @@
                         </div>
                         <div class="b-news__slider-slide">
                             <div class="b-news__slider-article">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-news__slider-article__img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/01/P1_02330BDOK-360x405.jpg">
                                     </div>
@@ -751,7 +966,7 @@
                         </div>
                     </div>
                     <div class="b-news__arrow b-news__arrow--left c-arrow">
-                        <span></span>
+                        <img src="./images/arrow-left.png">
                     </div>
                     <!-- <div class="b-news__arrow b-news__arrow--right c-arrow">
                         <span></span>
@@ -762,7 +977,7 @@
                 </div>
             </div>
             <div class="b-news__arrow b-news__arrow--right c-arrow">
-                <span></span>
+                <img src="./images/arrow-right.png">
             </div>
         </div>
         <div class="b-video">
@@ -779,8 +994,8 @@
                                     <div class="b-video__slider-top__slide-video__img">
                                         <img src="https://www.racing92.fr//content/uploads/2020/04/fond-720x432.jpg">
                                     </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
+                                    <span class="b-video__slider-top__slide-video__icon c-play-icon--main">
+                                        <img srcset="./images/play.png">
                                     </span>
                                 </div>
                                 <div class="b-video__slider-top__slide-text">
@@ -1201,7 +1416,7 @@
                                         <img srcset="./images/Video_Slider_img21.jpg">
                                     </div>
                                     <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
+                                        <!-- <img srcset="./images/play.svg"> -->
                                     </span>
                                 </div>
                                 <div class="b-video__slider-top__slide-text">
@@ -1221,7 +1436,7 @@
                                         <img srcset="./images/Video_Slider_img22.png">
                                     </div>
                                     <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
+                                        <!-- <img srcset="./images/play.svg"> -->
                                     </span>
                                 </div>
                                 <div class="b-video__slider-top__slide-text">
@@ -1241,7 +1456,7 @@
                                         <img srcset="./images/Video_Slider_img23.png">
                                     </div>
                                     <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
+                                        <!-- <img srcset="./images/play.svg"> -->
                                     </span>
                                 </div>
                                 <div class="b-video__slider-top__slide-text">
@@ -1261,7 +1476,7 @@
                                         <img srcset="./images/Video_Slider_img24.jpg">
                                     </div>
                                     <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
+                                        <!-- <img srcset="./images/play.svg"> -->
                                     </span>
                                 </div>
                                 <div class="b-video__slider-top__slide-text">
@@ -1283,7 +1498,7 @@
                     <div class="b-video__slider-thumbs">
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/02/P2_04470OK-450x270.jpg">
                                     </div>
@@ -1294,17 +1509,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             Au coeur du jeu : R92 vs MHR
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
-                            
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/02/BIA_230220_6464_54547-450x270.jpg">
                                     </div>
@@ -1315,16 +1529,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             SP vs R92 : le résumé vidéo de la rencontre
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/02/Capture-d’écran-2020-02-12-à-18.44.56-min-450x270.png">
                                     </div>
@@ -1335,16 +1549,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             D(derby) Day J-3
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/02/Sans-titre-1-450x270.png">
                                     </div>
@@ -1355,16 +1569,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             Au coeur du jeu : R92 vs MHR
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/02/FPORCU00410160-450x270.jpg">
                                     </div>
@@ -1375,16 +1589,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             SP vs R92 : le résumé vidéo de la rencontre
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/01/Capture-450x270.jpg">
                                     </div>
@@ -1395,16 +1609,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             D(derby) Day J-3
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/01/19.20-Castres-vs-Raci5D2-min-450x270.jpg">
                                     </div>
@@ -1415,16 +1629,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             Au coeur du jeu : R92 vs MHR
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/01/Capture-d’écran-2020-01-24-à-10.18.31-450x270.png">
                                     </div>
@@ -1435,16 +1649,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             SP vs R92 : le résumé vidéo de la rencontre
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/01/DAN15657-1-450x270.jpg">
                                     </div>
@@ -1455,16 +1669,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             D(derby) Day J-3
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/01/Capture-d’écran-2020-01-14-à-11.31.13-450x270.png">
                                     </div>
@@ -1475,16 +1689,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             Au coeur du jeu : R92 vs MHR
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img srcset="https://www.racing92.fr//content/uploads/2020/01/P1_08844-450x270.jpg">
                                     </div>
@@ -1495,16 +1709,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             SP vs R92 : le résumé vidéo de la rencontre
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img srcset="https://www.racing92.fr//content/uploads/2020/01/Juan-Seven-450x270.jpg">
                                     </div>
@@ -1515,16 +1729,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             D(derby) Day J-3
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2020/01/P1_08564-450x270.jpg">
                                     </div>
@@ -1535,16 +1749,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             Au coeur du jeu : R92 vs MHR
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/12/19.20-Brive-vs-Racing-031-450x270.jpg">
                                     </div>
@@ -1555,16 +1769,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             SP vs R92 : le résumé vidéo de la rencontre
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/12/P1_02896BDOK-450x270.jpg">
                                     </div>
@@ -1575,16 +1789,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             D(derby) Day J-3
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/12/Capture-d’écran-2019-12-19-à-09.52.20-450x270.png">
                                     </div>
@@ -1595,16 +1809,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             Au coeur du jeu : R92 vs MHR
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/12/Capture-d’écran-2019-12-18-à-18.31.35-450x270.png">
                                     </div>
@@ -1615,16 +1829,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             SP vs R92 : le résumé vidéo de la rencontre
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/12/Diaporama-Racing-92-Osprays-17-1-450x270.jpg">
                                     </div>
@@ -1635,16 +1849,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             D(derby) Day J-3
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/12/GettyImages-1192531503-450x270.jpg">
                                     </div>
@@ -1655,16 +1869,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             Au coeur du jeu : R92 vs MHR
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/12/Capture-d’écran-2019-12-04-à-17.41.10-450x270.png">
                                     </div>
@@ -1675,16 +1889,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             SP vs R92 : le résumé vidéo de la rencontre
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/12/P1_01297OK-min-2-450x270.jpg">
                                     </div>
@@ -1695,16 +1909,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             D(derby) Day J-3
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/11/Capture-d’écran-2019-11-28-à-19.27.25-450x270.png">
                                     </div>
@@ -1715,16 +1929,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             Au coeur du jeu : R92 vs MHR
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/11/Capture-d’écran-2019-11-26-à-18.31.00-min-450x270.png">
                                     </div>
@@ -1735,16 +1949,16 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             SP vs R92 : le résumé vidéo de la rencontre
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="b-video__slider-thumbs__slide">
                             <div class="b-video__slider-thumbs__slide-video">
-                                <a href="https://www.racing92.fr/">
+                                <a href="article_page.html">
                                     <div class="b-video__slider-thumbs__slide-img c-overlay">
                                         <img src="https://www.racing92.fr//content/uploads/2019/11/RB3_0739-450x270.jpg">
                                     </div>
@@ -1755,9 +1969,9 @@
                                         <h3 class="b-video__slider-thumbs__slide-text__title">
                                             D(derby) Day J-3
                                         </h3>
-                                    </div>
-                                    <div class="b-video__slider-thumbs__slide-icon c-play-icon">
-                                        <img srcset="./images/play.svg">
+                                        <div class="b-video__slider-thumbs__slide-icon c-play-icon">
+                                            <img srcset="./images/play.svg">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -1768,10 +1982,10 @@
                         <a class="c-btn c-btn--navy-blue" href="tv_page.html">voir toutes les vidéos</a>
                     </div>
                     <div class="b-video__slider-thumbs__arrow b-video__slider-thumbs__arrow--left c-arrow">
-                        <span></span>
+                        <img src="./images/arrow-left.png">
                     </div>
                     <div class="b-video__slider-thumbs__arrow b-video__slider-thumbs__arrow--right c-arrow">
-                        <span></span>
+                        <img src="./images/arrow-right.png">
                     </div>
                 </div>
             </div>
@@ -1795,7 +2009,7 @@
                 <div class="b-shop__slider-wrapper">
                     <div class="b-shop__slider">
                         <div class="b-shop__slider-slide">
-                            <a href="https://www.racing92.fr/"> 
+                            <a target='_blank' href="https://boutique-racing92.fr/fr/ballons-mini-ballons/673-ballons-sky-t5-racing92.html"> 
                                 <div class="b-shop__slider-slide__img">
                                     <img srcset="./images/Shop_Slider_img1.png">
                                 </div>
@@ -1805,7 +2019,7 @@
                             </a>
                         </div>
                         <div class="b-shop__slider-slide">
-                            <a href="https://www.racing92.fr/">
+                            <a target='_blank' href="https://boutique-racing92.fr/fr/ballons-mini-ballons/673-ballons-sky-t5-racing92.html">
                                 <div class="b-shop__slider-slide__img">
                                     <img srcset="./images/Shop_Slider_img2.png">
                                 </div>
@@ -1815,7 +2029,7 @@
                             </a>
                         </div>
                         <div class="b-shop__slider-slide">
-                            <a href="https://www.racing92.fr/">
+                            <a target='_blank' href="https://boutique-racing92.fr/fr/ballons-mini-ballons/673-ballons-sky-t5-racing92.html">
                                 <div class="b-shop__slider-slide__img">
                                     <img srcset="./images/Shop_Slider_img3.png">
                                 </div>
@@ -1825,7 +2039,7 @@
                             </a>
                         </div>
                         <div class="b-shop__slider-slide">
-                            <a href="https://www.racing92.fr/">
+                            <a target='_blank' href="https://boutique-racing92.fr/fr/ballons-mini-ballons/673-ballons-sky-t5-racing92.html">
                                 <div class="b-shop__slider-slide__img">
                                     <img srcset="./images/Shop_Slider_img4.png">
                                 </div>
@@ -1835,7 +2049,7 @@
                             </a>
                         </div>
                         <div class="b-shop__slider-slide">
-                            <a href="https://www.racing92.fr/">
+                            <a target='_blank' href="https://boutique-racing92.fr/fr/ballons-mini-ballons/673-ballons-sky-t5-racing92.html">
                                 <div class="b-shop__slider-slide__img">
                                     <img srcset="./images/Shop_Slider_img5.png">
                                 </div>
@@ -1845,7 +2059,7 @@
                             </a>
                         </div>
                         <div class="b-shop__slider-slide">
-                            <a href="https://www.racing92.fr/">
+                            <a target='_blank' href="https://boutique-racing92.fr/fr/ballons-mini-ballons/673-ballons-sky-t5-racing92.html">
                                 <div class="b-shop__slider-slide__img">
                                     <img srcset="./images/Shop_Slider_img6.png">
                                 </div>
@@ -1855,7 +2069,7 @@
                             </a>
                         </div>
                         <div class="b-shop__slider-slide">
-                            <a href="https://www.racing92.fr/">
+                            <a target='_blank' href="https://boutique-racing92.fr/fr/ballons-mini-ballons/673-ballons-sky-t5-racing92.html">
                                 <div class="b-shop__slider-slide__img">
                                     <img srcset="./images/Shop_Slider_img7.png">
                                 </div>
@@ -1865,7 +2079,7 @@
                             </a>
                         </div>
                         <div class="b-shop__slider-slide">
-                            <a href="https://www.racing92.fr/">
+                            <a target='_blank' href="https://boutique-racing92.fr/fr/ballons-mini-ballons/673-ballons-sky-t5-racing92.html">
                                 <div class="b-shop__slider-slide__img">
                                     <img srcset="./images/Shop_Slider_img8.png">
                                 </div>
@@ -1875,7 +2089,7 @@
                             </a>
                         </div>
                         <div class="b-shop__slider-slide">
-                            <a href="https://www.racing92.fr/">
+                            <a target='_blank' href="https://boutique-racing92.fr/fr/ballons-mini-ballons/673-ballons-sky-t5-racing92.html">
                                 <div class="b-shop__slider-slide__img">
                                     <img srcset="./images/Shop_Slider_img9.png">
                                 </div>
@@ -1885,7 +2099,7 @@
                             </a>
                         </div>
                         <div class="b-shop__slider-slide">
-                            <a href="https://www.racing92.fr/">
+                            <a target='_blank' href="https://boutique-racing92.fr/fr/ballons-mini-ballons/673-ballons-sky-t5-racing92.html">
                                 <div class="b-shop__slider-slide__img">
                                     <img srcset="./images/Shop_Slider_img10.png">
                                 </div>
@@ -1896,10 +2110,10 @@
                         </div>
                     </div>
                     <div class="b-shop__arrow b-shop__arrow--left c-arrow">
-                        <span></span>
+                        <img src="./images/arrow-left.png">
                     </div>
                     <div class="b-shop__arrow b-shop__arrow--right c-arrow">
-                        <span></span>
+                        <img src="./images/arrow-right.png">
                     </div>
                 </div>
 
@@ -1914,7 +2128,7 @@
                 <div class="b-players__slider">
                     <div class="b-players__slider-wrapper">
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img1.png">
@@ -1948,7 +2162,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img2.png">
@@ -1982,7 +2196,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img3.png">
@@ -2016,7 +2230,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img4.png">
@@ -2050,7 +2264,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img5.png">
@@ -2084,7 +2298,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img6.png">
@@ -2118,7 +2332,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img7.png">
@@ -2152,7 +2366,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img8.png">
@@ -2186,7 +2400,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img9.png">
@@ -2220,7 +2434,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img10.png">
@@ -2254,7 +2468,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img11.png">
@@ -2288,7 +2502,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img12.png">
@@ -2322,7 +2536,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img13.png">
@@ -2356,7 +2570,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img14.png">
@@ -2390,7 +2604,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img15.png">
@@ -2424,7 +2638,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img16.png">
@@ -2458,7 +2672,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img17.png">
@@ -2492,7 +2706,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img18.png">
@@ -2526,7 +2740,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img19.png">
@@ -2560,7 +2774,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img20.png">
@@ -2594,7 +2808,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img21.png">
@@ -2628,7 +2842,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img22.png">
@@ -2662,7 +2876,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img23.png">
@@ -2696,7 +2910,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img24.png">
@@ -2730,7 +2944,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img25.png">
@@ -2764,7 +2978,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img26.png">
@@ -2798,7 +3012,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img27.png">
@@ -2832,7 +3046,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img28.png">
@@ -2866,7 +3080,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img29.png">
@@ -2900,7 +3114,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img30.png">
@@ -2934,7 +3148,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img31.png">
@@ -2968,7 +3182,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img32.png">
@@ -3002,7 +3216,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img33.png">
@@ -3036,7 +3250,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img34.png">
@@ -3070,7 +3284,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img35.png">
@@ -3084,7 +3298,7 @@
                                     <div class="b-players__slider-slide__player-overlay__img">
                                         <img srcset="./images/Player_Slider_hoverImg35.png">
                                     </div>
-                                    <p class="b-players__slider-slide__player-overlay__position">Deme d'ouverture</p>
+                                    <p class="b-players__slider-slide__player-overlay__position">Demi d'ouverture</p>
                                     <div class="b-players__slider-slide__player-overlay__info">
                                         <p>
                                             7
@@ -3104,7 +3318,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img36.png">
@@ -3138,7 +3352,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img37.png">
@@ -3172,7 +3386,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img38.png">
@@ -3206,7 +3420,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img39.png">
@@ -3240,7 +3454,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img40.png">
@@ -3274,7 +3488,7 @@
                             </a>
                         </div>
                         <div class="b-players__slider-slide">
-                            <a class="b-players__slider-slide__link" href="https://www.racing92.fr/">
+                            <a class="b-players__slider-slide__link" href="fiche-joueur_page.html">
                                 <div class="b-players__slider-slide__player">
                                     <div class="b-players__slider-slide__player-img">
                                         <img srcset="./images/Player_Slider_img41.png">
@@ -3309,10 +3523,10 @@
                         </div>
                     </div>
                     <div class="b-players__slider-arrow b-players__slider-arrow--left c-arrow">
-                        <span></span>
+                        <img src="./images/arrow-left.png">
                     </div>
                     <div class="b-players__slider-arrow b-players__slider-arrow--right c-arrow">
-                        <span></span>
+                        <img src="./images/arrow-right.png">
                     </div>
                 </div>
             </div>
@@ -3388,7 +3602,7 @@
             <div class="b-footer__wrapper">
                 <div class="b-footer__top wrapper">
                     <div class="b-footer__top-wrapper">
-                        <a class="b-footer__top-link" href="https://www.racing92.fr/">
+                        <a class="b-footer__top-link" href="partenaires_page.html">
                             <picture class="b-footer__top-img">
                                 <source srcset="https://www.racing92.fr//content/uploads/2019/10/bandeau-partenaire-R92_2019-2020_v8.jpg" media="(min-width: 768px)">
                                 <img src="https://www.racing92.fr//content/uploads/2019/09/bandeau_partenaires_mobile_v4.png">
@@ -3404,51 +3618,51 @@
                         <div class="b-footer__bottom-navigation">
                             <ul class="b-footer__bottom-navigation__list">
                                 <li class="b-footer__bottom-navigation__list-item">
-                                    <a href="https://www.racing92.fr/">Mentions légales</a>
+                                    <a href="mentions_page.html">Mentions légales</a>
                                 </li>
                                 <li class="b-footer__bottom-navigation__list-item">
-                                    <a href="https://www.racing92.fr/">Contact</a>
+                                    <a href="contact_page.html">Contact</a>
                                 </li>
                                 <li class="b-footer__bottom-navigation__list-item">
-                                    <a href="https://www.racing92.fr/">Politique de confidentialité</a>
+                                    <a href="politique_page.html">Politique de confidentialité</a>
                                 </li>
                                 <li class="b-footer__bottom-navigation__list-item">
-                                    <a href="https://www.racing92.fr/">Cookies</a>
+                                    <a href="cookies_page.html">Cookies</a>
                                 </li>
                                 <li class="b-footer__bottom-navigation__list-item">
-                                    <a href="https://www.racing92.fr/">CGU</a>
+                                    <a href="cgu_page.html">CGU</a>
                                 </li>
                                 <li class="b-footer__bottom-navigation__list-item">
                                     <a href="cgv_page.html">CGV</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="b-footer__bottom-social">
-                            <ul class="b-footer__bottom-social__list">
-                                <li class="b-footer__bottom-social__list-item">
+                        <div class="b-footer__bottom-social  c-social">
+                            <ul class="b-footer__bottom-social__list c-social__list">
+                                <li class="b-footer__bottom-social__list-item  c-social__list-item">
                                     <a target="_blank" href="https://www.facebook.com/Racing92Officiel/">
-                                        <div class="b-footer__bottom-social__list-item__icon b-footer__bottom-social__list-item__icon--facebook">
+                                        <div class="b-footer__bottom-social__list-item__icon b-footer__bottom-social__list-item__icon--facebook c-social__list-item__icon  c-social__list-item__icon--facebook">
                                             <img srcset="./images/facebook-white.png">
                                         </div>
                                     </a>
                                 </li>
-                                <li class="b-footer__bottom-social__list-item">
+                                <li class="b-footer__bottom-social__list-item  c-social__list-item">
                                     <a target="_blank" href="https://twitter.com/Racing92">
-                                        <div class="b-footer__bottom-social__list-item__icon b-footer__bottom-social__list-item__icon--twitter">
+                                        <div class="b-footer__bottom-social__list-item__icon b-footer__bottom-social__list-item__icon--twitter c-social__list-item__icon  c-social__list-item__icon--twitter">
                                             <img srcset="./images/twitter-white.png">
                                         </div>
                                     </a>
                                 </li>
-                                <li class="b-footer__bottom-social__list-item">
+                                <li class="b-footer__bottom-social__list-item  c-social__list-item">
                                     <a target="_blank" href="https://www.instagram.com/Racing92/">
-                                        <div class="b-footer__bottom-social__list-item__icon b-footer__bottom-social__list-item__icon--instagram">
+                                        <div class="b-footer__bottom-social__list-item__icon b-footer__bottom-social__list-item__icon--instagram c-social__list-item__icon  c-social__list-item__icon--instagram">
                                             <img srcset="./images/instagram-white.png">
                                         </div>
                                     </a>
                                 </li>
-                                <li class="b-footer__bottom-social__list-item">
+                                <li class="b-footer__bottom-social__list-item  c-social__list-item">
                                     <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
-                                        <div class="b-footer__bottom-social__list-item__icon b-footer__bottom-social__list-item__icon--youtube">
+                                        <div class="b-footer__bottom-social__list-item__icon b-footer__bottom-social__list-item__icon--youtube c-social__list-item__icon  c-social__list-item__icon--youtube">
                                             <img srcset="./images/youtube-white.png">
                                         </div>
                                     </a>

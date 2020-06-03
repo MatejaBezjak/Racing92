@@ -1,16 +1,25 @@
 .c-play-icon{
+    // &::before{
+    //     position: absolute;
+    //     content: "";
+    //     background-image: url("../images/play.png");
+    //     background-size: cover;
+    //     width: 4.1rem;
+    //     height: 4.1rem;
+    //     @include breakpoint(desktop){
+    //         width: 4.4rem;
+    //         height: 4.4rem;
+    //     }
+    // }
     position: absolute;
     width: 4.1rem;
     height: 4.1rem;
-    top: 16.6rem;
-    left: 6.4rem;
     @include breakpoint(desktop){
         width: 4.4rem;
         height: 4.4rem;
-        top: 17.4rem;
-        left: 9rem;
     }
     &--main{
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

@@ -1,0 +1,335 @@
+.p-history{
+    position: relative;
+    @include breakpoint(desktop){
+        margin-bottom: 2rem;
+    }
+    &__wrapper{
+        position: relative;
+    }
+    &__hero{
+        position: relative;
+        background: $black;
+        @include breakpoint(desktop){
+            background: none;
+        }
+        &-wrapper{
+            position: relative;
+            width: 100vw;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &-img{
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            height: 46.2rem;
+            width: 100%;
+            @include breakpoint(desktop){
+                height: 65rem;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(181deg, rgba(0,0,0,0), #000 100%);
+                bottom: 0;
+                right: 0;
+            }
+        }
+        &-intro{
+            position: relative;
+            padding-bottom: 6.8rem;
+            color: $white;
+            @include breakpoint(desktop){
+                padding-bottom: 12.5rem;
+            }
+            &__wrapper{
+                position: relative;
+                padding: 0 6.2rem 0 6.6rem;
+                @include breakpoint(desktop){
+                    padding: 0 44rem;
+                }
+            }
+            &__title{
+                position: relative;
+                font-family: $roboto;
+                font-weight: 900;
+                font-size: 4.5rem;
+                line-height: 4.5rem;
+                text-transform: uppercase;
+                padding: 24.4rem 10rem 0;
+                margin-bottom: 5rem;
+                text-align: center;
+                @include breakpoint(desktop){
+                    font-size: 5.5rem;
+                    line-height: 3.8rem;
+                    padding: 31.4rem 0 0 0;
+                    margin-bottom: 3.4rem;
+                }
+                span{
+                    font-weight: 900;
+                    color: $gold;
+                }
+            }
+            &__text{
+                position: relative;
+                font-family: $lato;
+                font-weight: 700;
+                font-size: 2.8rem;
+                line-height: 4.5rem;
+                color: $white;
+                text-align: left;
+                @include breakpoint(desktop){
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.1rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &__content{
+        position: relative;
+        padding-top: 13.5rem;
+        @include breakpoint(desktop){
+            padding-top: 11.8rem;
+            .p-simple__text-wrapper{
+                margin-bottom: 2.2rem;
+            }
+            .p-simple__content{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    &__timeline{
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $navy-blue;
+        // padding-top: 8.1rem;
+        padding: 8.1rem 6.4rem 5rem;
+        margin-bottom: 5rem;
+        @include breakpoint(desktop){
+            // padding: 0 32.1rem 0 32rem;
+            padding: 4.5rem 0 3.8rem 0;
+            margin-bottom: 3.2rem;
+        }
+        &-wrapper{
+            position: relative;
+            overflow: hidden;
+            @include breakpoint(desktop){
+                padding: 0 32rem 0 32rem;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                width: 0.2rem;
+                height: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 2.2rem;
+                background: $light-blue;
+                z-index: -2;
+                @include breakpoint(desktop){
+                    top: 3.8rem;
+                }
+            }
+            
+        }
+        &-item{
+            position: relative;
+            margin-bottom: 14.1rem;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+            @include breakpoint(desktop){
+                display: flex;
+                flex-direction: row-reverse;
+                margin-bottom: 5.6rem;
+                &:first-of-type{
+                    margin-bottom: 3rem;
+                    .p-history__timeline-item__date{
+                        top: 0;
+                        &-day{
+                            left: -0.3rem;
+                            top: 0;
+                        }
+                    }
+                    .p-history__timeline-item__info{
+                        margin: 2.5rem 0 0;
+                    }
+                    &::after{
+                        top: 3.4rem;
+                    }
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background: $light-blue;
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    border-radius: 50%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 0.9rem;
+                }
+            }
+            &__date{
+                position: absolute;
+                font-family: $roboto;
+                font-weight: 900;
+                font-size: 3.5rem;
+                line-height: 3.5rem;
+                width: auto;
+                text-align: end;
+                right: 29.8rem;
+                @include breakpoint(desktop){
+                    font-size: 2.8rem;
+                    line-height: 3.2rem;
+                    right: 44rem;
+                    // margin-top: 4.4rem;
+                    top: -2.7rem;
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background: $light-blue;
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    border-radius: 50%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin-left: 3rem;
+                    @include breakpoint(desktop){
+                        // margin-left: 2.8rem;
+                        display: none;
+                    }
+                }
+                &-day{
+                    position: relative;
+                    display: block;
+                    color: $light-blue;
+                    text-align: left;
+                    font-weight: 900;
+                    @include breakpoint(desktop){
+                        top: 0.6rem;
+                        left: 0;
+                        
+                    }
+                }
+                &-month{
+                    position: relative;
+                    display: block;
+                    color: $white;
+                    font-weight: 900;
+                }
+                &-year{
+                    position: relative;
+                    display: block;
+                    color: $gold;
+                    font-weight: 900;
+                }
+            }
+            &__info{
+                position: relative;
+                // margin: 14.6rem 0 0 0;
+                padding: 14.6rem 0 1.8rem 0;
+                @include breakpoint(desktop){
+                    width: 36rem;
+                    // padding: 7.8rem 0 1.8rem 0;
+                    top: -0.1rem;
+                    padding: 0.8rem 0 0;
+                    // margin: 3rem 0 0;
+                    margin: 0;
+                    
+                }
+                &-title{
+                    position: relative;
+                    font-family: $roboto;
+                    font-weight: 700;
+                    font-size: 3rem;
+                    line-height: 4.7rem;
+                    color: $gold;
+                    padding-bottom: 0.7rem;
+                    @include breakpoint(desktop){
+                        font-size: 1.8rem;
+                        line-height: 3rem;
+                        padding-bottom: 1.2rem;
+                    }
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        background: $navy-blue;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                    }
+                }
+                &-text{
+                    position: relative;
+                    font-family: $lato;
+                    font-weight: 400;
+                    font-size: 2.8rem;
+                    line-height: 4.5rem;
+                    color: $white;
+                    @include breakpoint(desktop){
+                        font-size: 1.4rem;
+                        line-height: 2.81rem;
+                    }
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        background: $navy-blue;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+            &:nth-of-type(even){
+                @include breakpoint(desktop){
+                    flex-direction: row;
+                }
+                .p-history__timeline-item__date{
+                        text-align: left;
+                        left: 29.8rem;
+                        @include breakpoint(desktop){
+                            left: 44.1rem;
+                        }
+                        &::after{
+                            margin-left: -5.4rem;
+                        }
+                }
+                .p-history__timeline-item__info{
+                        text-align: end;
+                }
+            }
+        }
+    }
+    &__bottom-slider{
+        .c-arrow{
+            display: none !important;
+            @include breakpoint(desktop){
+                display: block;
+                width: 6.7rem;
+                height: 6.8rem;
+                bottom: 4rem;
+                &--left{
+                    left: 85%;
+                }
+                &--right{
+                    right: 0;
+                }
+            }
+        }
+    }
+}
