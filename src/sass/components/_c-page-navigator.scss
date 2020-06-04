@@ -14,12 +14,6 @@
         top: -6.1rem;
     }
     &__container{
-        // position: relative;
-        // display: flex;
-        // align-items: center;
-        // top: 50%;
-        // transform: translateY(-50%);
-        // overflow: hidden;
         display: flex;
         align-items: center;
         height: 100%;
@@ -62,7 +56,7 @@
 .c-page-navigator.fixed{
     position: fixed;
     top: 17.8rem !important;
-    z-index: 10;
+    z-index: 100;
     @include breakpoint(desktop){
         top: 8.7rem !important;
     }

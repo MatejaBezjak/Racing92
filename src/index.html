@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="./images/1294_white.png"/>
     <title>Racing92</title>
-    <!-- Slick Slider CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" /> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" /> -->
+    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
@@ -16,7 +16,7 @@
         <header class="b-header">
             <div class="b-header__main">
                 <div class="b-header__wrapper wrapper">
-                    <div class="b-header__logo--racing">
+                    <div class="b-header__logo--racing b-header__logo--racing-hp">
                         <img srcset="./images/LOGO_Racing92.svg" alt="Racing92-Logo">
                     </div>
                     <div class="b-header__top">
@@ -73,7 +73,7 @@
                                 <li class="b-header__mob-social__list-item c-social__list-item">
                                     <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
                                         <div class="b-header__mob-social__list-item__icon b-header__mob-social__list-item__icon--youtube c-social__list-item__icon c-social__list-item__icon--youtube">
-                                            <img srcset="./images/youtube-white.png">
+                                            <img srcset="./images/youtube-dark-blue.png">
                                         </div>
                                     </a>
                                 </li>
@@ -139,7 +139,7 @@
                                                 <li class="b-header__submenu-social__list-item c-social__list-item">
                                                     <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
                                                         <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--youtube c-social__list-item__icon c-social__list-item__icon--youtube">
-                                                            <img srcset="./images/youtube-white.png">
+                                                            <img srcset="./images/youtube-dark-blue.png">
                                                         </div>
                                                     </a>
                                                 </li>
@@ -167,11 +167,17 @@
                                             <a class="b-header__submenu-list__item-link" href="classement_page.html">Classement</a>
                                         </li>
                                         <li class="b-header__submenu-list__item">
-                                            <a class="b-header__submenu-list__item-link" href="camendrier_page.html">Calendrier</a>
+                                            <a class="b-header__submenu-list__item-link" href="calendrier_page.html">Calendrier</a>
                                         </li>
-                                        <li class="b-header__submenu-list__item b-header__submenu-list__item--sub">
+                                        <li id="sub" class="b-header__submenu-list__item b-header__submenu-list__item--sub">
                                             <a class="b-header__submenu-list__item-link" href>Racing Lab</a>
                                             <div class="b-header__submenu-sub">
+                                                <div class="b-header__submenu-sub__return">
+                                                    <span class="b-header__submenu-sub__return-icon">
+
+                                                    </span>
+                                                    <span class="b-header__submenu-sub__return-text">RETOUR</span>
+                                                </div>
                                                 <ul class="b-header__submenu-sub__list">
                                                     <li class="b-header__submenu-sub__list-item">
                                                         <a class="b-header__submenu-sub__list-item__link" href="article_page.html">Optimisation des crampons</a>
@@ -214,7 +220,7 @@
                                                 <li class="b-header__submenu-social__list-item c-social__list-item">
                                                     <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
                                                         <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--youtube c-social__list-item__icon c-social__list-item__icon--youtube">
-                                                            <img srcset="./images/youtube-white.png">
+                                                            <img srcset="./images/youtube-dark-blue.png">
                                                         </div>
                                                     </a>
                                                 </li>
@@ -229,9 +235,15 @@
                             <div id="nos-equipes-sub" class="b-header__submenu b-header__submenu--nos-equipes">
                                 <div class="b-header__submenu-wrapper">
                                     <ul class="b-header__submenu-list">
-                                        <li class="b-header__submenu-list__item b-header__submenu-list__item--sub">
+                                        <li id="sub"  class="b-header__submenu-list__item b-header__submenu-list__item--sub">
                                             <a class="b-header__submenu-list__item-link" href>Centre de Formation</a>
                                             <div class="b-header__submenu-sub">
+                                                <div class="b-header__submenu-sub__return">
+                                                    <span class="b-header__submenu-sub__return-icon">
+
+                                                    </span>
+                                                    <span class="b-header__submenu-sub__return-text">RETOUR</span>
+                                                </div>
                                                 <ul class="b-header__submenu-sub__list">
                                                     <li class="b-header__submenu-sub__list-item">
                                                         <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Effectif</a>
@@ -242,9 +254,15 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="b-header__submenu-list__item b-header__submenu-list__item--sub">
+                                        <li id="sub"  class="b-header__submenu-list__item b-header__submenu-list__item--sub">
                                             <a class="b-header__submenu-list__item-link" href>Espoirs</a>
                                             <div class="b-header__submenu-sub">
+                                                <div class="b-header__submenu-sub__return">
+                                                    <span class="b-header__submenu-sub__return-icon">
+
+                                                    </span>
+                                                    <span class="b-header__submenu-sub__return-text">RETOUR</span>
+                                                </div>
                                                 <ul class="b-header__submenu-sub__list">
                                                     <li class="b-header__submenu-sub__list-item">
                                                         <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Effectif</a>
@@ -264,9 +282,15 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="b-header__submenu-list__item b-header__submenu-list__item--sub">
+                                        <li id="sub"  class="b-header__submenu-list__item b-header__submenu-list__item--sub">
                                             <a class="b-header__submenu-list__item-link" href>Junior crabos</a>
                                             <div class="b-header__submenu-sub">
+                                                <div class="b-header__submenu-sub__return">
+                                                    <span class="b-header__submenu-sub__return-icon">
+
+                                                    </span>
+                                                    <span class="b-header__submenu-sub__return-text">RETOUR</span>
+                                                </div>
                                                 <ul class="b-header__submenu-sub__list">
                                                     <li class="b-header__submenu-sub__list-item">
                                                         <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Effectif</a>
@@ -289,9 +313,15 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="b-header__submenu-list__item b-header__submenu-list__item--sub">
+                                        <li id="sub"  class="b-header__submenu-list__item b-header__submenu-list__item--sub">
                                             <a class="b-header__submenu-list__item-link" href>Cadet Alamercery</a>
                                             <div class="b-header__submenu-sub">
+                                                <div class="b-header__submenu-sub__return">
+                                                    <span class="b-header__submenu-sub__return-icon">
+
+                                                    </span>
+                                                    <span class="b-header__submenu-sub__return-text">RETOUR</span>
+                                                </div>
                                                 <ul class="b-header__submenu-sub__list">
                                                     <li class="b-header__submenu-sub__list-item">
                                                         <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Effectif</a>
@@ -314,9 +344,15 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="b-header__submenu-list__item b-header__submenu-list__item--sub">
+                                        <li id="sub"  class="b-header__submenu-list__item b-header__submenu-list__item--sub">
                                             <a class="b-header__submenu-list__item-link" href>Cadet Gaudermen</a>
                                             <div class="b-header__submenu-sub">
+                                                <div class="b-header__submenu-sub__return">
+                                                    <span class="b-header__submenu-sub__return-icon">
+
+                                                    </span>
+                                                    <span class="b-header__submenu-sub__return-text">RETOUR</span>
+                                                </div>
                                                 <ul class="b-header__submenu-sub__list">
                                                     <li class="b-header__submenu-sub__list-item">
                                                         <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Effectif</a>
@@ -339,9 +375,15 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="b-header__submenu-list__item b-header__submenu-list__item--sub">
+                                        <li id="sub"  class="b-header__submenu-list__item b-header__submenu-list__item--sub">
                                             <a class="b-header__submenu-list__item-link" href>Féminines</a>
                                             <div class="b-header__submenu-sub">
+                                                <div class="b-header__submenu-sub__return">
+                                                    <span class="b-header__submenu-sub__return-icon">
+
+                                                    </span>
+                                                    <span class="b-header__submenu-sub__return-text">RETOUR</span>
+                                                </div>
                                                 <ul class="b-header__submenu-sub__list">
                                                     <li class="b-header__submenu-sub__list-item">
                                                         <a class="b-header__submenu-sub__list-item__link" href="effectif_page.html">Effectif</a>
@@ -358,9 +400,15 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="b-header__submenu-list__item b-header__submenu-list__item--sub">
+                                        <li id="sub"  class="b-header__submenu-list__item b-header__submenu-list__item--sub">
                                             <a class="b-header__submenu-list__item-link" href>Ecole de rugby</a>
                                             <div class="b-header__submenu-sub">
+                                                <div class="b-header__submenu-sub__return">
+                                                    <span class="b-header__submenu-sub__return-icon">
+
+                                                    </span>
+                                                    <span class="b-header__submenu-sub__return-text">RETOUR</span>
+                                                </div>
                                                 <ul class="b-header__submenu-sub__list">
                                                     <li class="b-header__submenu-sub__list-item">
                                                         <a class="b-header__submenu-sub__list-item__link" href="article_page.html">Informations</a>
@@ -372,7 +420,7 @@
                                             </div>
                                         </li>
                                         <li class="b-header__submenu-list__item">
-                                            <a class="b-header__submenu-list__item-link" href="https://www.e-cotiz.com/app/site/10656-cotisationracing20192020">Cotisation</a>
+                                            <a class="b-header__submenu-list__item-link" target="_blank" href="https://www.e-cotiz.com/app/site/10656-cotisationracing20192020">Cotisation</a>
                                         </li>
                                     </ul>
                                     <div class="b-header__submenu-social b-header__submenu-social--nos-equipes">
@@ -403,7 +451,7 @@
                                                 <li class="b-header__submenu-social__list-item c-social__list-item">
                                                     <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
                                                         <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--youtube c-social__list-item__icon c-social__list-item__icon--youtube">
-                                                            <img srcset="./images/youtube-white.png">
+                                                            <img srcset="./images/youtube-dark-blue.png">
                                                         </div>
                                                     </a>
                                                 </li>
@@ -419,35 +467,41 @@
                                 <div class="b-header__submenu-wrapper">
                                     <ul class="b-header__submenu-list">
                                         <li class="b-header__submenu-list__item">
-                                            <a class="b-header__submenu-list__item-link" href="notre-histire_page">Histoire</a>
+                                            <a class="b-header__submenu-list__item-link" href="notre-histoire_page.html">Histoire</a>
                                         </li>
                                         <li class="b-header__submenu-list__item">
-                                            <a class="b-header__submenu-list__item-link" href="notre-histire_page">Hospitalités</a>
+                                            <a class="b-header__submenu-list__item-link" href="notre-histoire_page.html">Hospitalités</a>
                                         </li>
                                         <li class="b-header__submenu-list__item">
-                                            <a class="b-header__submenu-list__item-link" href="partenaires_page">Partenaires</a>
+                                            <a class="b-header__submenu-list__item-link" href="partenaires_page.html">Partenaires</a>
                                         </li>
                                         <li class="b-header__submenu-list__item">
-                                            <a class="b-header__submenu-list__item-link" href="notre-histire_page">Tribunes Expériences</a>
+                                            <a class="b-header__submenu-list__item-link" href="notre-histoire_page.html">Tribunes Expériences</a>
                                         </li>
                                         <li class="b-header__submenu-list__item">
-                                            <a class="b-header__submenu-list__item-link" href="partenaires_page">Supporters</a>
+                                            <a class="b-header__submenu-list__item-link" href="partenaires_page.html">Supporters</a>
                                         </li>
                                         <li class="b-header__submenu-list__item">
-                                            <a class="b-header__submenu-list__item-link" href="article_page">Mascotte</a>
+                                            <a class="b-header__submenu-list__item-link" href="article_page.html">Mascotte</a>
                                         </li>
                                         <li class="b-header__submenu-list__item">
-                                            <a class="b-header__submenu-list__item-link" href="notre-histire_page">Infrastructures</a>
+                                            <a class="b-header__submenu-list__item-link" href="notre-histoire_page.html">Infrastructures</a>
                                         </li>
-                                        <li class="b-header__submenu-list__item b-header__submenu-list__item--sub">
+                                        <li id="sub"  class="b-header__submenu-list__item b-header__submenu-list__item--sub">
                                             <a class="b-header__submenu-list__item-link" href>Coeur Ciel & Blanc</a>
                                             <div class="b-header__submenu-sub">
+                                                <div class="b-header__submenu-sub__return">
+                                                    <span class="b-header__submenu-sub__return-icon">
+
+                                                    </span>
+                                                    <span class="b-header__submenu-sub__return-text">RETOUR</span>
+                                                </div>
                                                 <ul class="b-header__submenu-sub__list">
                                                     <li class="b-header__submenu-sub__list-item">
-                                                        <a class="b-header__submenu-sub__list-item__link" href="article_page">Aesio- Aide à l'emploi</a>
+                                                        <a class="b-header__submenu-sub__list-item__link" href="article_page.html">Aesio- Aide à l'emploi</a>
                                                     </li>
                                                     <li class="b-header__submenu-sub__list-item">
-                                                        <a class="b-header__submenu-sub__list-item__link" href="article_page">Aressif</a>
+                                                        <a class="b-header__submenu-sub__list-item__link" href="article_page.html">Aressif</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -481,7 +535,7 @@
                                                 <li class="b-header__submenu-social__list-item c-social__list-item">
                                                     <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
                                                         <div class="b-header__submenu-social__list-item__icon b-header__navigation-social__list-item__icon--youtube c-social__list-item__icon c-social__list-item__icon--youtube">
-                                                            <img srcset="./images/youtube-white.png">
+                                                            <img srcset="./images/youtube-dark-blue.png">
                                                         </div>
                                                     </a>
                                                 </li>
@@ -492,46 +546,11 @@
                             </div>
                         </li>
                         <li class="b-header__navigation-list__item"><a class="b-header__navigation-list__item-link" href="article_page.html">COEUR CIEL & BLANC</a></li>
-                        <li class="b-header__navigation-list__item b-header__navigation-list__item--last"><a class="b-header__navigation-list__item-link" href="https://forum.racing92.fr/">FORUM</a></li>
+                        <li class="b-header__navigation-list__item b-header__navigation-list__item--last"><a class="b-header__navigation-list__item-link" target="_blank" href="https://forum.racing92.fr/">FORUM</a></li>
                     </ul>
                     <!-- <a class="b-header__navigation-logo--arena" href="https://www.parisladefense-arena.com/#utm_source=autopromo&utm_medium=site-racing92&utm_campaign=menu-logo-plda" target="_blank">
                         <img srcset="./images/parisladefensearena.svg" alt="parisladefensearena-Logo">
                     </a> -->
-                    <!-- <div class="b-header__navigation-social">
-                        <div class="b-header__navigation-social__wrapper c-social">
-                            <p>Le racing sur les réseaux sociaux</p>
-                            <ul class="b-header__navigation-social__list c-social__list">
-                                <li class="b-header__navigation-social__list-item c-social__list-item">
-                                    <a target="_blank" href="https://www.facebook.com/Racing92Officiel/">
-                                        <div class="b-header__navigation-social__list-item__icon b-header__navigation-social__list-item__icon--facebook c-social__list-item__icon c-social__list-item__icon--facebook">
-                                            <img srcset="./images/facebook-white.png">
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="b-header__navigation-social__list-item c-social__list-item">
-                                    <a target="_blank" href="https://twitter.com/Racing92">
-                                        <div class="b-header__navigation-social__list-item__icon b-header__navigation-social__list-item__icon--twitter c-social__list-item__icon c-social__list-item__icon--twitter">
-                                            <img srcset="./images/twitter-white.png">
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="b-header__navigation-social__list-item c-social__list-item">
-                                    <a target="_blank" href="https://www.instagram.com/Racing92/">
-                                        <div class="b-header__navigation-social__list-item__icon b-header__navigation-social__list-item__icon--instagram c-social__list-item__icon c-social__list-item__icon--instagram">
-                                            <img srcset="./images/instagram-white.png">
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="b-header__navigation-social__list-item c-social__list-item">
-                                    <a target="_blank" href="https://www.youtube.com/channel/UC4MQWtqrcD567vQIKyBJcsQ/">
-                                        <div class="b-header__navigation-social__list-item__icon b-header__navigation-social__list-item__icon--youtube c-social__list-item__icon c-social__list-item__icon--youtube">
-                                            <img srcset="./images/youtube-white.png">
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </header>
@@ -968,9 +987,6 @@
                     <div class="b-news__arrow b-news__arrow--left c-arrow">
                         <img src="./images/arrow-left.png">
                     </div>
-                    <!-- <div class="b-news__arrow b-news__arrow--right c-arrow">
-                        <span></span>
-                    </div> -->
                 </div>
                 <div class="b-news__btn">
                     <a class="c-btn c-btn--navy-blue" href="actu_page.html">VOIR TOUTES LES ACTUS</a>
@@ -1001,487 +1017,6 @@
                                 <div class="b-video__slider-top__slide-text">
                                     <h3 class="b-video__slider-top__slide-text__title">
                                         SP vs R92 : <br>Le résumé de la rencontre
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis disa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img1.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        Au coeur du jeu : R92 vs MHR
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img2.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        SP vs R92 : le résumé vidéo de la rencontre
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img3.png">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        D(derby) Day J-3
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis disa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img4.png">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        Au coeur du jeu : R92 vs MHR
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img5.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        SP vs R92 : le résumé vidéo de la rencontre
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis disa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img6.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        D(derby) Day J-3
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img7.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        Au coeur du jeu : R92 vs MHR
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis disa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img8.png">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        SP vs R92 : le résumé vidéo de la rencontre
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img9.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        D(derby) Day J-3
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img10.png">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        Au coeur du jeu : R92 vs MHR
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis disa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img11.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        SP vs R92 : le résumé vidéo de la rencontre
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img12.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        D(derby) Day J-3
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img13.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        Au coeur du jeu : R92 vs MHR
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis disa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img14.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        SP vs R92 : le résumé vidéo de la rencontre
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis disa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img15.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        D(derby) Day J-3
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img16.png">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        Au coeur du jeu : R92 vs MHR
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img17.png">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        SP vs R92 : le résumé vidéo de la rencontre
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis disa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img18.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        D(derby) Day J-3
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img19.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        Au coeur du jeu : R92 vs MHR
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis disa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img20.png">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <img srcset="./images/play.svg">
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        SP vs R92 : le résumé vidéo de la rencontre
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img21.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <!-- <img srcset="./images/play.svg"> -->
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        D(derby) Day J-3
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img22.png">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <!-- <img srcset="./images/play.svg"> -->
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        Au coeur du jeu : R92 vs MHR
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis disa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img23.png">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <!-- <img srcset="./images/play.svg"> -->
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        SP vs R92 : le résumé vidéo de la rencontre
-                                    </h3>
-                                    <p class="b-video__slider-top__slide-text__description">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                    </p>
-                                    <span class="b-video__slider-top__slide-text__date">
-                                        17/04/2020
-                                    </span>
-                                </div>
-                            </div><div class="b-video__slider-top__slide">
-                                <div class="b-video__slider-top__slide-video">
-                                    <div class="b-video__slider-top__slide-video__img">
-                                        <img srcset="./images/Video_Slider_img24.jpg">
-                                    </div>
-                                    <span class="b-video__slider-top__slide-video__icon c-play-icon c-play-icon--main">
-                                        <!-- <img srcset="./images/play.svg"> -->
-                                    </span>
-                                </div>
-                                <div class="b-video__slider-top__slide-text">
-                                    <h3 class="b-video__slider-top__slide-text__title">
-                                        D(derby) Day J-3
                                     </h3>
                                     <p class="b-video__slider-top__slide-text__description">
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis disa.
@@ -1977,7 +1512,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <p class="b-video__slider-thumbs__btn c-btn c-btn--navy-blue">voir toutes les vidéos</p> -->
                     <div class="b-video__slider-thumbs__btn">
                         <a class="c-btn c-btn--navy-blue" href="tv_page.html">voir toutes les vidéos</a>
                     </div>
@@ -1999,11 +1533,11 @@
                 <div class="b-shop__images">
                     <div class="b-shop__images-main-img">
                         <img srcset="./images/Boutique_MainImg.jpg">
-                        <a class="b-shop__images-main-img__btn c-btn c-btn--gold" href="https://boutique-racing92.fr/fr/223-maillots">Achetez votre maillot</a>
+                        <a class="b-shop__images-main-img__btn c-btn c-btn--gold" target="_blank" href="https://boutique-racing92.fr/fr/223-maillots">Achetez votre maillot</a>
                     </div>
                     <div class="b-shop__images-img">
                         <img srcset="./images/Boutique_Officielle.jpg">
-                        <a class="b-shop__images-img__btn c-btn c-btn--navy-blue" href="https://boutique-racing92.fr/fr/">Voir les produits</a>
+                        <a class="b-shop__images-img__btn c-btn c-btn--navy-blue" target="_blank" href="https://boutique-racing92.fr/fr/">Voir les produits</a>
                     </div>
                 </div>
                 <div class="b-shop__slider-wrapper">
@@ -3592,7 +3126,6 @@
                         </form>
                     </div>
                     <div class="b-newsletter__img">
-                        <!-- <img srcset="./images/Newsletter_img.png"> -->
                         <img src="https://www.racing92.fr//content/uploads/2019/12/png_accueil_v3.png">
                     </div>
                 </div>
@@ -3612,7 +3145,7 @@
                 </div>
                 <div class="b-footer__bottom">
                     <div class="b-footer__bottom-wrapper wrapper">
-                        <div class="b-footer__bottom-logo">
+                        <div class="b-footer__bottom-logo b-footer__bottom-logo--hp">
                             <img srcset="./images/logo-footer.svg">
                         </div>
                         <div class="b-footer__bottom-navigation">
@@ -3674,10 +3207,7 @@
             </div>
         </div>
     </div>
-    <!-- Jquery CDN Link -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-    <!-- Slick Slider JS -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script> -->
+    
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>

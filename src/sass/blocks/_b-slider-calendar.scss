@@ -1,12 +1,10 @@
 .b-slider-calendar{
     position: relative;
     width: 100%;
-    // display: flex;
     overflow: hidden;
     @include breakpoint(desktop){
         padding: 0 8.5rem !important;
     }
-    
     &__wrapper{
         margin-top: -4.5rem !important;
         margin-bottom: 7rem !important;
@@ -63,7 +61,6 @@
                 padding-bottom: 0.8rem;
                 @include breakpoint(desktop){
                     font-size: 1.2rem;
-                    // padding-left: 0.6rem;
                     padding-left: 0;
                     padding-bottom: 0.5rem;
                 }
@@ -98,8 +95,6 @@
             padding: 0 3.6rem;
             align-items: center;
             &-img{
-                // width: 4.7rem;
-                // height: 6.4rem;
                 width: 8.5rem;
                 @include breakpoint(desktop){
                     width: 7rem;
@@ -132,9 +127,6 @@
                     @include breakpoint(desktop){
                         font-size: 3rem;
                     }
-                    // &:nth-of-type(1){
-                    //     margin-left: -1.5rem;
-                    // }
                 }
             }
         }
@@ -178,7 +170,6 @@
             background-color: $light-blue;
             height: 25%;
             &-triger{
-                // top: 42%;
                 margin: auto;
                 top: 24%;
                 @include breakpoint(desktop){
@@ -196,7 +187,6 @@
             position: absolute;
             top: 40%;
             &--left{
-                // display: none !important;
                 left: 4rem;
             }
             &--right{
@@ -212,9 +202,6 @@
 
     }
 }
-// .slick-track{
-//     width: 206.4rem !important;
-// }
 .b-slider-calendar .slick-list{
     padding: 0 6.1rem !important;
     @include breakpoint(desktop){

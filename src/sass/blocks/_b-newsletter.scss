@@ -95,25 +95,11 @@
             display: flex;
             padding: 0 1.1rem 0 4.7rem;
         }
-        // &::after{
-        //     position: absolute;
-        //     content: '';
-        //     background: $light-blue;
-        //     width: 100vw;
-        //     height: 37.7rem;
-        //     left: 0;
-        //     top: 0;
-        //     z-index: -1;
-        //     @include breakpoint(desktop){
-        //         height: 22.4rem;
-        //     }
-        // }
     }
     &__form{
         position: relative;
         @include breakpoint(desktop){
             width: 55.2%;
-            // padding: 0 9.5rem;
             padding: 0.5rem 8.3rem 0 8.3rem;
             background: $white;
         }
@@ -133,9 +119,6 @@
                 padding: 0;
                 left: 0;
                 right: 0;
-                // margin: 0 0 1.2rem 14.62rem;
-                // margin: auto;
-                // margin-bottom: 1.2rem;
                 margin: 0 0 1.1rem 1.3rem;
 
             }
@@ -148,11 +131,8 @@
                     width: 26.96rem;
                     height: 4rem;
                     margin-bottom: 0;
-                    // margin-bottom: 3rem;
-                    // margin: 0 1.94rem 0 1.94rem;
                     &:nth-of-type(1){
                         margin-bottom: 2.9rem;
-                        // margin-right: 1.94rem;
                         margin-right: 3.88rem;
                     }
                     &:nth-of-type(3){
@@ -199,20 +179,15 @@
             margin: 0 0 4.8rem 6.6rem;
             @include breakpoint(desktop){
                 font-size: 1.4rem;
-                // margin: 0 0 4.8rem 16.4rem;
                 margin: 0 0 2.8rem 1.2rem;
             }
         }
         &-select{
             position: relative;
             display: flex;
-            // font-family: $lato;
-            // font-weight: 400;
-            // font-size: 2rem;
             color: $dark-blue;
             margin: 0 0 4.8rem 6.4rem;
             @include breakpoint(desktop){
-                // font-size: 1.2rem;
                 margin: 0 0 5.7rem 1.4rem;
             }
             &__checkbox{
@@ -229,13 +204,10 @@
                     font-size: 1.2rem;
                     padding-left: 3.06rem;
                     margin-right: 9.8rem;
-                    // width: auto;
                 }
                 &:nth-of-type(2){
-                    // width: 38%;
                     white-space: normal;
                     @include breakpoint(desktop){
-                        // width: auto;
                         margin-right: 11.8rem;
                     }
                 }

@@ -2,7 +2,6 @@
     position: relative;
     margin-bottom: 8.6rem;
     @include breakpoint(desktop){
-        // margin-bottom: 1.1rem;
         margin-bottom: 0;
         margin-top: 5.1rem;
     }
@@ -25,20 +24,14 @@
 
         }         
     }
-    // &__wrapper{
-        
-    // }
     &__title{
         position: relative;
         font-family: $roboto;
         font-weight: 900;
         font-size: 5.5rem;
         color: $dark-blue;
-        // margin-bottom: 4.6rem;
         margin: 0 0 4.6rem 2.4rem;
         @include breakpoint(desktop){
-            // margin-bottom: 0;
-            // margin-left: 11.7rem;
             margin: 0 0 0 11.7rem;
         }
         span{
@@ -68,13 +61,6 @@
         &-slide{
             position: relative;
             width: 100%;
-            // left: 0;
-            // @include breakpoint(desktop){
-            //     &:hover{
-            //         transform: scale(1.02);
-            //         z-index: 2;
-            //     }
-            // }
         }
         &-article{
             width: 25.6rem;
@@ -207,17 +193,11 @@
     }
 }
 
-// .b-news__btn .c-btn--navy-blue{
-//     padding: 0.8rem 0.33rem;
-// }
-
 .b-news__slider-wrapper .slick-list{
     padding: 0 20% 0 0 !important;
     @include breakpoint(desktop){
-        // padding: 0 12.5% 0 18rem !important;
         padding-right: 12.5% !important;
         margin-left: 18rem !important;
-        // height: 43.5rem;
         height: 46.4rem;
     }
 }
@@ -258,17 +238,3 @@
         display: block;
     }
 }
-
-// .b-news__arrow--left .slick-arrow{
-//     display: none !important;
-//     &:hover{
-//         display: block !important;
-//     }
-// }
-
-// .b-news__arrow--right .slick-arrow{
-//     display: none !important;
-//     &:hover{
-//         display: block !important;
-//     }
-// }

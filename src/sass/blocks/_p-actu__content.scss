@@ -8,18 +8,9 @@
     &-container{
         position: relative;
         padding-top: 14.3rem;
-        // z-index: 100;
         @include breakpoint(desktop){
             padding-top: 10.7rem;
         }
-        // &:nth-of-type(even){
-        //     .b-news .b-news__title{
-        //         @include breakpoint(desktop){
-        //             margin: 0 11.9rem 0 0;
-        //             text-align: end;
-        //         }
-        //     }
-        // }
         .p-actu__content-container--left .b-news__title{
             @include breakpoint(desktop){
                 margin: 0 11.9rem 0 0;
@@ -28,10 +19,6 @@
         }
         .p-actu__content-container--left .b-news__slider-wrapper .slick-list{
             @include breakpoint(desktop){
-                // padding-right: 0 !important;
-                // padding-left: 12.5% !important;
-                // margin-left: 0 !important;
-                // margin-right: 18rem !important;
                 padding: 0 0 0 12.5% !important;
                 margin: 0 18rem 0 0 !important;
             }

@@ -1,14 +1,12 @@
 $(document).ready(function(){
     $('.b-shop__slider').slick({
       variableWidth: true,
-    //   centerPadding: false,
       autoplay: false,
       slidesToShow: 5,
       slidesToScroll: 5,
       centerMode: false,
       adaptiveHeight: true,
       infinite: true,
-      // rows: 0,
       arrows: true,
       prevArrows: '.b-shop__arrow--left',
       nextArrow: '.b-shop__arrow--right',

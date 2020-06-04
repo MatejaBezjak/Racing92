@@ -8,22 +8,6 @@
             transition: all .3s ease;
         }
     }
-    // &::after{
-    //     position: absolute;
-    //     content: '';
-    //     background: $light-blue;
-    //     width: 38.4rem;
-    //     height: 13.3rem;
-    //     top: 22rem;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     z-index: -1;
-    //     @include breakpoint(desktop){
-    //         width: 26.9rem;
-    //         height: 9.3rem;
-    //         top: 15rem;
-    //     }
-    // }
     &__link{
         position: relative;
     }
@@ -103,12 +87,9 @@
         @include breakpoint(desktop){
             display: none;
             position: absolute;
-            width: 39.2rem;
+            width: 33rem;
             height: 43.8rem;
             top: -7rem;
-            // top: 50%;
-            // left: 50%;
-            // transform: translate(-50%, -50%);
             z-index: 3;
             transition: all .3s ease;
             &::after{

@@ -1,7 +1,6 @@
 .c-pagination{
     position: relative;
     display: flex;
-    // width: 40%;
     margin: auto;
     justify-content: space-between;
     width: 60%;
@@ -21,7 +20,6 @@
             font-size: 1.6rem;
         }
         &-prev{
-            // display: none;
             position: relative;
             margin-right: 1rem;
             @include breakpoint(desktop){
@@ -53,7 +51,6 @@
         }
         ul{
             position: relative;
-            // width: 55%;
             display: flex;
             justify-content: space-between;
             li{

@@ -2,19 +2,30 @@
     position: relative;
     margin-bottom: 6rem;
     @include breakpoint(desktop){
-        // padding-top: 10.7rem;
         margin-bottom: 5.6rem;
     }
     &__hero{
         .c-btn{
             margin-bottom: 2.3rem;
+            @include breakpoint(desktop){
+                margin-bottom: 1.8rem;
+            }
         }
         .c-hero__title{
             top: 8.5rem;
+            @include breakpoint(desktop){
+                top: 26.2rem;
+            }
             h1{
+                @include breakpoint(desktop){
+                    line-height: 4.3rem;
+                }
                 span{
                     color: $white;
                     font-size: 2.5rem;
+                    @include breakpoint(desktop){
+                        font-size: 3.5rem;
+                    }
                     span{
                         color: $gold;
                     }
@@ -91,7 +102,6 @@
                 margin-bottom: 7.9rem;
                 @include breakpoint(desktop){
                     width: 24% !important;
-                    // height: 43.8rem;
                     height: 34.5rem;
                     margin-bottom: 1.6rem;
                     margin-left: 0;

@@ -356,13 +356,11 @@
             padding: 0 4rem 3.9rem 12.8rem;
             background: $white;
             @include breakpoint(desktop){
-                // position: absolute;
                 position: relative;
                 font-size: 1.8rem;
                 line-height: 3.3rem;
                 padding: 0 12rem 1.6rem 13.3rem;
                 width: 37.3%;
-                // right: 18rem;
                 margin-left: 72.3rem;
             }
             p{
@@ -398,8 +396,6 @@
             }
             &__img{
                 position: relative;
-                // width: 6.4rem;
-                // height: 6.4rem;
                 @include breakpoint(desktop){
                     width: 4.6rem;
                     height: auto;

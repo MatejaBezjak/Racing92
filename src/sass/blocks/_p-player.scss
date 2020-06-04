@@ -107,7 +107,6 @@
                         }
                     }
                     &--maillot{
-                        // position: absolute;
                         top: 15.3rem;
                         left: 7rem;
                         @include breakpoint(desktop){
@@ -119,7 +118,6 @@
                         }
                     }
                     &--ticket{
-                        // position: absolute;
                         top: 46.6rem;
                         right: 12rem;
                         @include breakpoint(desktop){
@@ -661,10 +659,6 @@
                         bottom: 0;
                         background: $white;
                         @include breakpoint(desktop){
-                            // width: 0.2rem;
-                            // height: 35rem;
-                            // left: 100%;
-                            // bottom: 1.1rem;
                         }
                     }
                     &:last-of-type{
@@ -782,10 +776,6 @@
                         bottom: 0;
                         background: $white;
                         @include breakpoint(desktop){
-                            // width: 0.2rem;
-                            // height: 35rem;
-                            // left: 100%;
-                            // bottom: 1.1rem;
                         }
                     }
                     &:last-of-type{
